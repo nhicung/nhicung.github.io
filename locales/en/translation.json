@@ -1,7 +1,36 @@
 {
-  "title": "Welcome to react using react-i18next",
-  "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
+  "title": "A developer who enjoys creating arts",
+  "buttons": {
+    "button1": ".About Me.",
+    "button2": ".My Work.",
+    "button3": ".Contact.",
+    "button4": ".Home."
+  },
+
+  "aboutme":{
+    "hi": "Hi.",
+    "aboutme1":"My name is Nhi.",
+    "aboutme2":" I am a programmer",
+    "aboutme3":"... who can code with these technologies.",
+    "aboutme4":"I am also an artist who loves drawing and design.",
+    "aboutme5":"With these two passions, I strive to create professional technological productions that satisfy users' eyes and experience.",
+    "aboutme6":"Have a look at",
+    "link1":" My work",
+    "aboutme7":"and" ,
+    "link2": "Contact me" ,
+    "aboutme8":"if you are interested!"
+  },
+
+  "contact":{
+    "title":"Contact",
+    "contact1":"Feel free to reach out to me with these addresses!",
+    "contact2":"I am very responsive!"
+  },
+  "project":{
+    "button1":"Visit Site ",
+    "button2":"See Git Repo "
+  },
+  "tools":{
+    "1":"with ReactJs, HTML, CSS"
   }
 }
