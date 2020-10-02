@@ -10,16 +10,29 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     marginTop: 50,
-    height: 600,
-
+    height: 500,
+    // height: 'auto%',
+    width: 'auto',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    // backgroundAttachment: 'fixed',
+    // backgroundImage: 'url(./images/container1.png)',
+    backgroundPosition: 'center'
   },
   category1: {
     // position: 'absolute',
     fontFamily: 'Montserrat',
     fontSize: 120,
     color: '#ECECEC',
-    writingMode: 'sideways-lr',
-    margin: 'auto',
+    writingMode: 'vertical-lr',
+    // WebkitTransform:'rotate(90deg) translate(-100px, 16px)',
+    // msTransform:'rotate(-90deg)',
+    // transform: 'rotate(-90deg)',
+    // margin: 'auto',
     marginRight: '100px',
   },
 
@@ -60,8 +73,8 @@ export default function Project(props) {
   return (
     <div key={props.project.id}>
       <Fade>
-        <Container className={classes.container} style={{ backgroundColor: props.project.color }} maxWidth='lg' >
-          <p className={classes.category1}>{props.project.type}</p>
+        <Container className={classes.container} style={{ backgroundImage: props.project.bgimage }} maxWidth='lg' >
+          {/* <p className={classes.category1}>{props.project.type}</p> */}
           <div className={classes.project}>
             <h1 className={classes.names}> {props.project.name}</h1>
             <h2 className={classes.tools}> {props.project.tool}</h2>
