@@ -1,7 +1,34 @@
 {
-  "title": "Willkommen zu react und react-i18next",
-  "description": {
-    "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",
-    "part2": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+  "title": "Một lập trình viên đam mê nghệ thuật",
+  "buttons": {
+    "button1": ".Giới Thiệu.",
+    "button2": "Công Việc",
+    "button3": ".Liên lạc .",
+    "button4": ".Trang Chủ ."
+  },
+  "aboutme":{
+    "hi": "Xin chào.",
+    "aboutme1":"Mình tên là Nhi.",
+    "aboutme2":"Mình là một lập trình viên",
+    "aboutme3":"... với khả năng lập trình với những công cụ này.",
+    "aboutme4":"Mình cũng có một tâm hồn nghệ sĩ thích vẽ vời và thiết kế .",
+    "aboutme5":"Với hai khả năng này, mình đam mê tạo ra những sản phẩm công nghệ chuyên nghiệp đáp ứng thị hiếu của người dùng.",
+    "aboutme6":"Cùng nghía qua",
+    "link1":" Sản Phẩm",
+    "aboutme7":"của mình và " ,
+    "link2": "Liên Hệ" ,
+    "aboutme8":" với mình nếu bạn có hứng thú nhé!"  
+  },
+  "contact":{
+    "title":"Liên lạc",
+    "contact1":"Đây là các địa chỉ để liên lạc với mình!",
+    "contact2":""
+  },
+  "project":{
+    "button1":"Visit Site ",
+    "button2":"See Git Repo "
+  },
+  "tools":{
+    "1":"dùng ReactJs, HTML, CSS"
   }
 }
