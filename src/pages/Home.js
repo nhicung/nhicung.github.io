@@ -75,7 +75,7 @@ export default function Home({}) {
 	return (
 		// <div className="App">
 		<div className={classes.root}>
-			<Fade top><div className={classes.name}>.Nhi Cung</div></Fade>
+			<Fade top><div className={classes.name}>.Nhi Cung.</div></Fade>
 			<Fade top><p className={classes.hi}> {t('title')} </p></Fade>
 			<div>
 				<Button
