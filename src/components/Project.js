@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Fade from 'react-reveal/Fade';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -11,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     marginTop: 50,
     height: 500,
-    // height: 'auto%',
     width: 'auto',
     left: 0,
     right: 0,
@@ -19,20 +19,13 @@ const useStyles = makeStyles((theme) => ({
     bottom: 0,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    // backgroundAttachment: 'fixed',
-    // backgroundImage: 'url(./images/container1.png)',
     backgroundPosition: 'center'
   },
   category1: {
-    // position: 'absolute',
     fontFamily: 'Montserrat',
     fontSize: 120,
     color: '#ECECEC',
     writingMode: 'vertical-lr',
-    // WebkitTransform:'rotate(90deg) translate(-100px, 16px)',
-    // msTransform:'rotate(-90deg)',
-    // transform: 'rotate(-90deg)',
-    // margin: 'auto',
     marginRight: '100px',
   },
 
@@ -69,23 +62,23 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Project(props) {
   const classes = useStyles();
+  const { t, i18n } = useTranslation();
 
   return (
-    <div key={props.project.id}>
+    <div  >
       <Fade>
         <Container className={classes.container} style={{ backgroundImage: props.project.bgimage }} maxWidth='lg' >
-          {/* <p className={classes.category1}>{props.project.type}</p> */}
           <div className={classes.project}>
             <h1 className={classes.names}> {props.project.name}</h1>
-            <h2 className={classes.tools}> {props.project.tool}</h2>
-            <p className={classes.descripts}> {props.project.description}</p>
+            <h2 className={classes.tools}id={props.project.id} > {t(`mywork.${props.project.id}.tool`) }</h2>
+            <p className={classes.descripts}> {t(`mywork.${props.project.id}.description`) }</p>
             {(props.project.webURL != null) ?
               <Button
                 color="primary"
                 className={classes.button}
                 size='medium'
                 variant="outlined"
-                href={props.project.webURL} target='_blank'> Visit Site </Button> : null}
+                href={props.project.webURL} target='_blank'> {t('projectButton.button1')} </Button> : null}
 
             {(props.project.gitURL != null) ?
               <Button
@@ -93,7 +86,7 @@ export default function Project(props) {
                 className={classes.button}
                 size='medium'
                 variant="outlined"
-                href={props.project.gitURL}> See Git Repo </Button> : null}
+                href={props.project.gitURL}> {t('projectButton.button2')} </Button> : null}
           </div>
           <Fade>
             {(props.project.imgHover != null) ?

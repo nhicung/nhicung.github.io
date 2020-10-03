@@ -89,8 +89,8 @@ export default function RightSide(props) {
 
 			<ThemeProvider theme={theme}>
 				<div>
-					{dataProject.map((project) => (
-						<Project project={project} />
+					{dataProject.map((project, i) => (
+						<Project project={project}/>
 					))}
 				</div>
 			</ThemeProvider >

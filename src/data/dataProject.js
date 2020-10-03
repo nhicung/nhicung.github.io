@@ -1,6 +1,6 @@
 const description = [
 	{
-		id: 0,
+		id: 'cungdesign',
 		color:'#d49a89',
 		height:'55%',
 		padding:'5%',
@@ -14,7 +14,7 @@ const description = [
 		gitURL:'https://github.com/nhicung/CungDesign'
 	},
 	{
-		id: 1,
+		id: 'lindsay',
 		color:'#68b0ab',
 		height:'55%',
 		padding:'5%',
@@ -27,7 +27,7 @@ const description = [
 		webURL:'https://www.lindsaycurrie.com/',
 	},
 	{
-		id: 2,
+		id: 'four',
 		color:'#4e89ae',
 		height:'55%',
 		padding:'5%',
@@ -40,7 +40,7 @@ const description = [
 		webURL:'https://www.fourunitedrepublic.com/',
 	},
 	{
-		id: 3,
+		id: 'squirrel',
 		color:'#ba7967',
 		height:'100%',
 		img:  'images/MenuSquirrel1.png',
@@ -53,7 +53,7 @@ const description = [
 		gitURL:'https://github.com/nhicung/squishy-squirrel',
 	},
 	{
-		id: 4,
+		id: 'memory',
 		color:'#557571',
 		height:'70%',
 		padding:'5%',
@@ -67,7 +67,7 @@ const description = [
 		gitURL:'https://github.com/mmmcgill/If_Memory_Serves',
 	},
 	{
-		id: 5,
+		id: 'message',
 		color:'#d9adad',
 		height:'100%',
 		img: 'images/message3.png',
@@ -80,7 +80,7 @@ const description = [
 		gitURL:'https://github.com/nhicung/virtual-message',
 	},
 	{
-		id: 6,
+		id: 'icicle',
 		color:'#8675a9',
 		height:'70%',
 		padding:'5%',
