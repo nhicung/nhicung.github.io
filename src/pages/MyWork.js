@@ -5,6 +5,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import Project from '../components/Project';
 import ButtonHeader from '../components/ButtonHeader';
+import { useTranslation } from 'react-i18next';
 
 const theme = createMuiTheme({
 	palette: {
@@ -63,6 +64,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function RightSide(props) {
 	const classes = useStyles();
+	const { t, i18n } = useTranslation();
 
 	return (
 
@@ -70,20 +72,20 @@ export default function RightSide(props) {
 			<div className={classes.header}>
 				<div>
 					<ButtonHeader className={classes.headerPos1} to={'/contact'}>
-						.Contact
+						{t('buttons.button3')}
 						</ButtonHeader>
 					<ButtonHeader className={classes.headerPos2} to={'/'}>
-						.Home
+					{t('buttons.button4')}
 						</ButtonHeader>
 					<ButtonHeader className={classes.headerPos3} to={'/about-me'}>
-						.About Me
+					{t('buttons.button1')}
 						</ButtonHeader>
 				</div>
 			</div>
 
 			{/* Title */}
 
-			<div className={classes.titleWrap} ><h className={classes.title} >My Work</h></div>
+			<div className={classes.titleWrap} ><h className={classes.title}>{t('mywork.title')}</h></div>
 
 			{/* Body */}
 

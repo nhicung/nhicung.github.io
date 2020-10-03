@@ -29,6 +29,7 @@
     "button2": "See Git Repo "
   },
   "mywork": {
+    "title":"My Work",
     "cungdesign": {
       "tool": "with ReactJs, HTML, CSS",
       "description": "This is a multi-page website I designed and coded as a personal project. The website showcases artworks made by Cung Design."
