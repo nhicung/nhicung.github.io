@@ -6,31 +6,56 @@
     "button3": ".Contact.",
     "button4": ".Home."
   },
-
-  "aboutme":{
+  "aboutme": {
     "hi": "Hi.",
-    "aboutme1":"My name is Nhi.",
-    "aboutme2":" I am a programmer",
-    "aboutme3":"... who can code with these technologies.",
-    "aboutme4":"I am also an artist who loves drawing and design.",
-    "aboutme5":"With these two passions, I strive to create professional technological productions that satisfy users' eyes and experience.",
-    "aboutme6":"Have a look at",
-    "link1":" My work",
-    "aboutme7":"and" ,
-    "link2": "Contact me" ,
-    "aboutme8":"if you are interested!"
+    "aboutme1": "My name is Nhi.",
+    "aboutme2": " I am a programmer",
+    "aboutme3": "... who can code with these technologies.",
+    "aboutme4": "I am also an artist who loves drawing and design.",
+    "aboutme5": "With these two passions, I strive to create professional technological productions that satisfy users' eyes and experience.",
+    "aboutme6": "Have a look at",
+    "link1": " My work",
+    "aboutme7": "and",
+    "link2": "Contact me",
+    "aboutme8": "if you are interested!"
   },
-
-  "contact":{
-    "title":"Contact",
-    "contact1":"Feel free to reach out to me with these addresses!",
-    "contact2":"I am very responsive!"
+  "contact": {
+    "title": "Contact",
+    "contact1": "Feel free to reach out to me with these addresses!",
+    "contact2": "I am very responsive!"
   },
-  "project":{
-    "button1":"Visit Site ",
-    "button2":"See Git Repo "
+  "projectButton": {
+    "button1": "Visit Site ",
+    "button2": "See Git Repo "
   },
-  "tools":{
-    "1":"with ReactJs, HTML, CSS"
+  "mywork": {
+    "cungdesign": {
+      "tool": "with ReactJs, HTML, CSS",
+      "description": "This is a multi-page website I designed and coded as a personal project. The website showcases artworks made by Cung Design."
+    },
+    "lindsay": {
+      "tool": "with Wix, Corvid",
+      "description": "This is a published website I redesigned and coded for a children book author - Lindsay Currie to make the user experience more enjoyable."
+    },
+    "four": {
+      "tool": "with Wix, Corvid",
+      "description": "This is a published website I redesigned for Tom Henderson including improving its usability and reorganzing its content for better performance."
+    },
+    "squirrel": {
+      "tool": "with Unity, C#, Adobe Illustrator",
+      "description": "This 2D mobile game was coded and designed by a team of three for the purpose of improving student's awareness of a healthy nutrition for squirrels."
+    },
+    "memory": {
+      "tool": "with Unity, C#",
+      "description": "I worked on this game as a research assistant during junior year at Knox college. I coded and redesigned to improve its UX/UI."
+    },
+    "message": {
+      "tool": "with ReactJs, HTML, CSS",
+      "description": "I coded and designed this simple app to send birthday and graduation congratulation messages to my friends during the COVID-19."
+    },
+    "icicle": {
+      "tool": "with Unity, C#",
+      "description": "This 2D game was coded and designed by a team of two as a class project of Knox College."
+    }
   }
 }

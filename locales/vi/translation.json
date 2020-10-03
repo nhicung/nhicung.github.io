@@ -6,29 +6,56 @@
     "button3": ".Liên lạc .",
     "button4": ".Trang Chủ ."
   },
-  "aboutme":{
+  "aboutme": {
     "hi": "Xin chào.",
-    "aboutme1":"Mình tên là Nhi.",
-    "aboutme2":"Mình là một lập trình viên",
-    "aboutme3":"... với khả năng lập trình với những công cụ này.",
-    "aboutme4":"Mình cũng có một tâm hồn nghệ sĩ thích vẽ vời và thiết kế .",
-    "aboutme5":"Với hai khả năng này, mình đam mê tạo ra những sản phẩm công nghệ chuyên nghiệp đáp ứng thị hiếu của người dùng.",
-    "aboutme6":"Cùng nghía qua",
-    "link1":" Sản Phẩm",
-    "aboutme7":"của mình và" ,
-    "link2": "Liên Hệ" ,
-    "aboutme8":" với mình nếu bạn có hứng thú nhé!"  
+    "aboutme1": "Mình tên là Nhi.",
+    "aboutme2": "Mình là một lập trình viên",
+    "aboutme3": "... với khả năng lập trình với những công cụ này.",
+    "aboutme4": "Mình cũng có một tâm hồn nghệ sĩ thích vẽ vời và thiết kế .",
+    "aboutme5": "Với hai khả năng này, mình đam mê tạo ra những sản phẩm công nghệ chuyên nghiệp đáp ứng thị hiếu của người dùng.",
+    "aboutme6": "Cùng nghía qua",
+    "link1": " Sản Phẩm",
+    "aboutme7": "của mình và",
+    "link2": "Liên Hệ",
+    "aboutme8": " với mình nếu bạn có hứng thú nhé!"
   },
-  "contact":{
-    "title":"Liên lạc",
-    "contact1":"Đây là các địa chỉ để liên lạc với mình!",
-    "contact2":""
+  "contact": {
+    "title": "Liên lạc",
+    "contact1": "Đây là các địa chỉ để liên lạc với mình!",
+    "contact2": ""
   },
-  "project":{
-    "button1":"Visit Site ",
-    "button2":"See Git Repo "
+  "projectButton": {
+    "button1": "Xem trang web ",
+    "button2": "Xem Git Repo "
   },
-  "tools":{
-    "1":"dùng ReactJs, HTML, CSS"
+  "mywork": {
+    "cungdesign": {
+      "tool": "sử dụng ReactJs, HTML, CSS",
+      "description": "Đây là một trang web mình code và thiết kế. Trang web này giứoi thiệu và triển lãm tranh và sản phẩm của Cung Design."
+    },
+    "lindsay": {
+      "tool": "sử dụng Wix, Corvid",
+      "description": "Đây là trang web mình thiết kế lại và code cho một tác giả truyện thiếu nhi - Lindsay Currie giúp cho trảu nghiệm người dùng trở nên thú vị hơn."
+    },
+    "four": {
+      "tool": "sử dụng Wix, Corvid",
+      "description": "Đây là trang web mình thiết kế và code cho Tom Henderson giúp sắp xếp lại nội dung trang web và nâng cấp trải nghiệm cho người dử dụng."
+    },
+    "squirrel": {
+      "tool": "sử dụng Unity, C#, Adobe Illustrator",
+      "description": "Đây là một game trên điện thoại được code vad thiết kế bởi một nhóm 3 người nhằm nâng cao nhận thức của học sinh về dinh dưỡng cho loài sóc chuột."
+    },
+    "memory": {
+      "tool": "sử dụng Unity, C#",
+      "description": "Mình làm nghiên cứu cho game này trong năm thứ 3 đại học. Nhiệm vụ của mình là nâng cấp UX/UI và trải nghiệm của người chơi game."
+    },
+    "message": {
+      "tool": "sử dụng ReactJs, HTML, CSS",
+      "description": "Mình code và thiết kế app điện thoại đơn giản này để gửi lời chúc tốt nghiệp và sinh nhật đến bạn bè và người thân trong mùa dịch COVID-19."
+    },
+    "icicle": {
+      "tool": "sử dụng Unity, C#",
+      "description": "Game 2D này là một dự án nhóm được lập trình và thiết kế bởi một nhóm 2 sinh viên tại Đại học Knox."
+    }
   }
 }
