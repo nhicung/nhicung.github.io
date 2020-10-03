@@ -32,11 +32,11 @@
     "title":"Công Việc",
     "cungdesign": {
       "tool": "sử dụng ReactJs, HTML, CSS",
-      "description": "Đây là một trang web mình code và thiết kế. Trang web này giứoi thiệu và triển lãm tranh và sản phẩm của Cung Design."
+      "description": "Đây là một trang web mình code và thiết kế. Trang web này giới thiệu và triển lãm tranh và sản phẩm của Cung Design."
     },
     "lindsay": {
       "tool": "sử dụng Wix, Corvid",
-      "description": "Đây là trang web mình thiết kế lại và code cho một tác giả truyện thiếu nhi - Lindsay Currie giúp cho trảu nghiệm người dùng trở nên thú vị hơn."
+      "description": "Đây là trang web mình thiết kế mới và code cho một tác giả truyện thiếu nhi - Lindsay Currie giúp cho trải nghiệm người dùng trở nên thú vị hơn."
     },
     "four": {
       "tool": "sử dụng Wix, Corvid",
@@ -44,7 +44,7 @@
     },
     "squirrel": {
       "tool": "sử dụng Unity, C#, Adobe Illustrator",
-      "description": "Đây là một game trên điện thoại được code vad thiết kế bởi một nhóm 3 người nhằm nâng cao nhận thức của học sinh về dinh dưỡng cho loài sóc chuột."
+      "description": "Đây là một game trên điện thoại được code và thiết kế bởi một nhóm 3 người nhằm nâng cao nhận thức của học sinh về dinh dưỡng cho loài sóc chuột."
     },
     "memory": {
       "tool": "sử dụng Unity, C#",
