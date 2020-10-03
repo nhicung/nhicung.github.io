@@ -29,6 +29,7 @@
     "button2": "Xem Git Repo "
   },
   "mywork": {
+    "title":"Công Việc",
     "cungdesign": {
       "tool": "sử dụng ReactJs, HTML, CSS",
       "description": "Đây là một trang web mình code và thiết kế. Trang web này giứoi thiệu và triển lãm tranh và sản phẩm của Cung Design."
