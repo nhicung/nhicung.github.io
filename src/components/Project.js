@@ -21,14 +21,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
   },
-  category1: {
-    fontFamily: 'Montserrat',
-    fontSize: 120,
-    color: '#ECECEC',
-    writingMode: 'vertical-lr',
-    marginRight: '100px',
-  },
-
   project: {
     color: '#ECECEC',
     textAlign: 'left',
@@ -52,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '22px',
     textAlign:'justify'
   },
-
   button: {
     marginRight: 50,
     fontFamily: 'Roboto Slab',

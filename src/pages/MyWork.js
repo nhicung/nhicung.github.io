@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function RightSide(props) {
+export default function Mywork(props) {
 	const classes = useStyles();
 	const { t, i18n } = useTranslation();
 

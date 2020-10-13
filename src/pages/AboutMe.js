@@ -5,9 +5,13 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import ButtonHeader from '../components/ButtonHeader';
 import { useTranslation } from 'react-i18next';
+import SelfIntro from '../components/SelfIntro';
+import Experience from '../components/Experience';
+import Feedback from '../components/Feedback';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    textAlign: 'center',
     fontFamily: 'Montserrat',
     height: 'auto%',
     width: 'auto',
@@ -39,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     // backgroundColor: 'rgb(212, 154, 137, 0.5)',
-    textAlign:'left',
+    textAlign: 'left',
     display: 'flex',
   },
   hi: {
@@ -97,8 +101,13 @@ export default function LeftSide() {
             {t('buttons.button3')}
           </ButtonHeader>
         </div>
+        <div>
+          <SelfIntro />
+          <Experience />
+          <Feedback />
+        </div>
       </div>
-      <div className={classes.container} maxWidth="md">
+      {/* <div className={classes.container} maxWidth="md">
         <Slide left>
           <div className={classes.description}>
             <h1 className={classes.hi}> {t('aboutme.hi')}</h1>
@@ -158,7 +167,8 @@ export default function LeftSide() {
               </Link> {t('aboutme.aboutme8')}</p>
           </div>
         </Slide>
-      </div>
+      </div> */}
     </div>
+
   );
 }

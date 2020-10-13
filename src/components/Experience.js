@@ -1,88 +1,77 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import Typography from '../components/Typography';
-import ExtensionIcon from '@material-ui/icons/Extension';
 import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
 import { useTranslation } from 'react-i18next';
+import Grid from '@material-ui/core/Grid';
+import Typography from '../components/Typography';
 import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: 30,
+    padding: 25,
   },
   container: {
-    padding: 50,
-    backgroundColor: '#4e89ae',
+    backgroundColor: '#68b0ab',
     height: 'auto',
     width: 'auto',
     left: 0,
     right: 0,
+    padding: 50,
     bottom: 0,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
   },
-  item1: {
-    paddingTop: 40,
-    height: 340,
-    display: 'flex',
-    flexDirection: 'column',
-    // alignItems: 'center',
-    padding: theme.spacing(0, 5),
-    backgroundColor: '#85c5dd'
-  },
-  item2: {
-    paddingTop: 40,
-    height: 340,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: theme.spacing(0, 5),
-    backgroundColor: '#c0f1e3'
-  },
-  item3: {
-    paddingTop: 40,
-    height: 340,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: theme.spacing(0, 5),
-    backgroundColor: '#e8ffc1'
-  },
-  title: {
-    color: '#b7cfdf',
+  expTitle: {
+    color: '#c2dfdd',
     textAlign: 'left',
-    // width: 700,
+    width: 700,
     paddingRight: 100,
     fontSize: '50px',
     fontFamily: 'Roboto Slab',
     margin: 0,
   },
-  feedbackText: {
+  expText: {
     fontSize: 25,
     textAlign: 'left',
     color: '#ECECEC'
   },
+  item1: {
+    height: 470,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: theme.spacing(0, 5),
+    backgroundColor: '#8fc0a9'
+  },
+  item2: {
+    height: 470,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: theme.spacing(0, 5),
+    backgroundColor: '#c8d5b9'
+  },
+  item3: {
+    height: 470,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: theme.spacing(0, 5),
+    backgroundColor: '#faf3dd'
+  },
   image: {
-    height: 70,
-    marginBottom: theme.spacing(4),
+    height: 80,
+    width: 80,
+    padding: 30,
   },
   itemText: {
     color: '#5e5e5e',
     fontFamily: 'Roboto Slab',
-  },
-  name: {
-    width: 300,
-    color: '#5e5e5e',
-    fontSize: 15,
-    textAlign: 'right'
   }
 }));
 
-export default function Feedback() {
+export default function Mywork(props) {
   const classes = useStyles();
   const { t, i18n } = useTranslation();
 
@@ -90,46 +79,54 @@ export default function Feedback() {
     <div className={classes.root}>
       <Fade>
         <Container className={classes.container} maxWidth='lg'>
-          <h1 className={classes.title}>
-            {t('aboutme.feedTitle')}
-          </h1>
-          <p className={classes.feedbackText}>{t('aboutme.feedIntro')}</p> <br />
+          <h2 className={classes.expTitle}>{t('aboutme.expTitle')}</h2>
+          <p className={classes.expText}>{t('aboutme.expIntro')}</p> <br />
           <div>
             <Grid container spacing={5}>
               <Grid item xs={12} md={4}>
                 <div className={classes.item1}>
-                  {/* <img
-                    src={process.env.PUBLIC_URL + '/images/rating.png'}
+                  <img
+                    src={process.env.PUBLIC_URL + '/images/RA.png'}
                     alt="rating"
                     className={classes.image}
-                  /> */}
+                  />
                   <Typography className={classes.itemText} variant="h6" align="justify">
-                    {t('aboutme.feed1')}
+                    {t('aboutme.exp1')}
+                    <b>{t('aboutme.note1')}</b>
+                    {t('aboutme.exp11')}
+                    <b>{t('aboutme.note2')}</b>
+                    {t('aboutme.exp12')}
                   </Typography>
-                  <div className={classes.name}>
-                    <br />
-                    <b>Lindsay C.</b> - Author at Simon and Schuster
-                  </div>
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>
                 <div className={classes.item2}>
+                  <img
+                    src={process.env.PUBLIC_URL + '/images/club.png'}
+                    alt="rating"
+                    className={classes.image}
+                  />
                   <Typography className={classes.itemText} variant="h6" align="justify">
-                    {t('aboutme.feed2')}
+                    {t('aboutme.exp2')}
+                    <b>{t('aboutme.note3')}</b>
+                    {t('aboutme.exp21')}
+                    <b>{t('aboutme.note4')}</b>
+                    {t('aboutme.exp22')}
                   </Typography>
-                  <div className={classes.name}>
-                    <br />
-                    <b>Monica M.</b><i>- President and CEO at CSEdResearch.org</i>  </div>
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>
                 <div className={classes.item3}>
+                  <img
+                    src={process.env.PUBLIC_URL + '/images/labMana.png'}
+                    alt="rating"
+                    className={classes.image}
+                  />
                   <Typography className={classes.itemText} variant="h6" align="justify">
-                    {t('aboutme.feed3')}
+                    {t('aboutme.exp3')}
+                    <b>{t('aboutme.note6')}</b>
+                    {t('aboutme.exp31')}
                   </Typography>
-                  <div className={classes.name}>
-                    <br />
-                    <b>Thomas H.</b> <i>- CEO at FOUR</i></div>
                 </div>
               </Grid>
             </Grid>
