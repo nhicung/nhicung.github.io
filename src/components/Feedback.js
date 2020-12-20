@@ -27,30 +27,30 @@ const useStyles = makeStyles((theme) => ({
   },
   item1: {
     paddingTop: 40,
-    height: 340,
+    height: 'auto',
     display: 'flex',
     flexDirection: 'column',
     // alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#85c5dd'
+    backgroundColor: '#477ea0'
   },
   item2: {
     paddingTop: 40,
-    height: 340,
+    height: 'auto',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    // alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#c0f1e3'
+    backgroundColor: '#477ea0'
   },
   item3: {
     paddingTop: 40,
-    height: 340,
+    height: 'auto',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    // alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#e8ffc1'
+    backgroundColor: '#477ea0'
   },
   title: {
     color: '#b7cfdf',
@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
   },
   feedbackText: {
     fontSize: 25,
-    textAlign: 'left',
     color: '#ECECEC'
   },
   image: {
@@ -71,14 +70,15 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(4),
   },
   itemText: {
-    color: '#5e5e5e',
+    color: '#ececec',
     fontFamily: 'Roboto Slab',
   },
   name: {
     width: 300,
-    color: '#5e5e5e',
+    color: '#ececec',
     fontSize: 15,
-    textAlign: 'right'
+    paddingBottom: 20,
+    paddingTop: 20
   }
 }));
 
@@ -98,17 +98,11 @@ export default function Feedback() {
             <Grid container spacing={5}>
               <Grid item xs={12} md={4}>
                 <div className={classes.item1}>
-                  {/* <img
-                    src={process.env.PUBLIC_URL + '/images/rating.png'}
-                    alt="rating"
-                    className={classes.image}
-                  /> */}
                   <Typography className={classes.itemText} variant="h6" align="justify">
                     {t('aboutme.feed1')}
                   </Typography>
                   <div className={classes.name}>
-                    <br />
-                    <b>Lindsay C.</b> - Author at Simon and Schuster
+                    <b>Lindsay C.</b> <i>- Author at Simon and Schuster</i>
                   </div>
                 </div>
               </Grid>
@@ -118,8 +112,8 @@ export default function Feedback() {
                     {t('aboutme.feed2')}
                   </Typography>
                   <div className={classes.name}>
-                    <br />
-                    <b>Monica M.</b><i>- President and CEO at CSEdResearch.org</i>  </div>
+                    <b>Monica M.</b><i>- President and CEO at CSEdResearch.org</i> 
+                  </div>
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>

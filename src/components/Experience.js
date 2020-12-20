@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   expTitle: {
     color: '#c2dfdd',
     textAlign: 'left',
-    width: 700,
+    width: 900,
     paddingRight: 100,
     fontSize: '50px',
     fontFamily: 'Roboto Slab',
@@ -37,28 +37,28 @@ const useStyles = makeStyles((theme) => ({
     color: '#ECECEC'
   },
   item1: {
-    height: 470,
+    height: 'auto',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#8fc0a9'
+    // backgroundColor: '#8fc0a9'
   },
   item2: {
-    height: 470,
+    height: 'auto',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#c8d5b9'
+    // backgroundColor: '#c8d5b9'
   },
   item3: {
-    height: 470,
+    height: 'auto',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#faf3dd'
+    // backgroundColor: '#faf3dd'
   },
   image: {
     height: 80,
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 30,
   },
   itemText: {
-    color: '#5e5e5e',
+    color: '#ececec',
     fontFamily: 'Roboto Slab',
   }
 }));
@@ -86,7 +86,7 @@ export default function Mywork(props) {
               <Grid item xs={12} md={4}>
                 <div className={classes.item1}>
                   <img
-                    src={process.env.PUBLIC_URL + '/images/RA.png'}
+                    src={process.env.PUBLIC_URL + '/images/campus.png'}
                     alt="rating"
                     className={classes.image}
                   />
@@ -102,23 +102,20 @@ export default function Mywork(props) {
               <Grid item xs={12} md={4}>
                 <div className={classes.item2}>
                   <img
-                    src={process.env.PUBLIC_URL + '/images/club.png'}
+                    src={process.env.PUBLIC_URL + '/images/personal-computer.png'}
                     alt="rating"
                     className={classes.image}
                   />
                   <Typography className={classes.itemText} variant="h6" align="justify">
                     {t('aboutme.exp2')}
-                    <b>{t('aboutme.note3')}</b>
-                    {t('aboutme.exp21')}
-                    <b>{t('aboutme.note4')}</b>
-                    {t('aboutme.exp22')}
+                    {t('aboutme.note3')}
                   </Typography>
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>
                 <div className={classes.item3}>
                   <img
-                    src={process.env.PUBLIC_URL + '/images/labMana.png'}
+                    src={process.env.PUBLIC_URL + '/images/computer-2.png'}
                     alt="rating"
                     className={classes.image}
                   />

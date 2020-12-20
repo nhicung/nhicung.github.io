@@ -2,8 +2,7 @@ const description = [
 	{
 		id: 'cungdesign',
 		color:'#d49a89',
-		height:'55%',
-		padding:'5%',
+		height:'250px',
 		img:  'images/CungDesign.gif',
 		bgimage: 'url(./images/container1.png)',
 		type: '.Web',
@@ -16,8 +15,7 @@ const description = [
 	{
 		id: 'lindsay',
 		color:'#68b0ab',
-		height:'55%',
-		padding:'5%',
+		height:'250px',
 		img: 'images/lindsay.gif',
 		bgimage: 'url(./images/lindsaybg.png)',
 		type: '.Web',
@@ -29,8 +27,7 @@ const description = [
 	{
 		id: 'four',
 		color:'#4e89ae',
-		height:'55%',
-		padding:'5%',
+		height:'250px',
 		img: 'images/four.gif',
 		bgimage: 'url(./images/fourbg.png)',
 		type: '.Web',
@@ -42,7 +39,7 @@ const description = [
 	{
 		id: 'squirrel',
 		color:'#ba7967',
-		height:'100%',
+		height:'320px',
 		img:  'images/MenuSquirrel1.png',
 		imgHover:  'images/MenuSquirrelHover.png',
 		bgimage: 'url(./images/squirrelbg.png)',
@@ -55,8 +52,7 @@ const description = [
 	{
 		id: 'memory',
 		color:'#557571',
-		height:'70%',
-		padding:'5%',
+		height:'250px',
 		img: 'images/memoryMenu.png',
 		imgHover: 'images/memoryHover.png',
 		bgimage: 'url(./images/memorybg.png)',
@@ -69,7 +65,7 @@ const description = [
 	{
 		id: 'message',
 		color:'#d9adad',
-		height:'100%',
+		height:'320px',
 		img: 'images/message3.png',
 		imgHover: 'images/messageHover.png',
 		bgimage: 'url(./images/messagebg.png)',
@@ -82,8 +78,7 @@ const description = [
 	{
 		id: 'icicle',
 		color:'#8675a9',
-		height:'70%',
-		padding:'5%',
+		height:'250px',
 		img:  'images/icicleshot.png',
 		imgHover:  'images/icicleHover.png',
 		bgimage: 'url(./images/iciclebg.png)',

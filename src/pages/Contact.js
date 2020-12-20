@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	iconList: {
 		display: 'flex',
-		paddingLeft: '15%',
+		paddingLeft: '20%',
 		paddingTop: '2%'
 	},
 	icon: {
@@ -106,20 +106,20 @@ const dataIcon = [
 		title: 'email',
 		href: ''
 	},
+	// {
+	// 	id: 1,
+	// 	img: 'images/upwork.png',
+	// 	title: 'upwork',
+	// 	href: ''
+	// },
 	{
 		id: 2,
-		img: 'images/upwork.png',
-		title: 'upwork',
-		href: ''
-	},
-	{
-		id: 3,
 		img: 'images/facebook.png',
 		title: 'facebook',
 		href: 'https://facebook.com/cungnhi'
 	},
 	{
-		id: 4,
+		id: 3,
 		img: 'images/instagram.png',
 		title: 'instagram',
 		href: 'https://instagram.com/cungnhi'

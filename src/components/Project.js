@@ -4,15 +4,16 @@ import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Fade from 'react-reveal/Fade';
 import { useTranslation } from 'react-i18next';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    padding: 50,
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     marginTop: 50,
-    height: 500,
-    width: 'auto',
+    // height: '450px',
+    height:'auto',
+    maxWidth: '80%',
     left: 0,
     right: 0,
     top: 0,
@@ -21,12 +22,17 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
   },
+  set: {
+    justifyContent:'center',
+    display: 'flex',
+    flexDirection: 'row',
+    padding: 80,
+  },
   project: {
     color: '#ECECEC',
     textAlign: 'left',
-    paddingTop: '8%',
     width: 700,
-    paddingRight:100
+    // paddingRight:100
   },
   names: {
     fontSize: '44px',
@@ -51,11 +57,11 @@ const useStyles = makeStyles((theme) => ({
   imgWrap:{
     width:300,
     display:'flex',
-    justifyContent:'center',
     alignItems:'center'
   },
   pic: {
-    paddingLeft: '5%'
+    margin: 'auto',
+    display: 'block',
   },
 }));
 
@@ -66,8 +72,9 @@ export default function Project(props) {
   return (
     <div  >
       <Fade>
-        <Container className={classes.container} style={{ backgroundImage: props.project.bgimage }} maxWidth='lg' >
-          <div className={classes.project}>
+        <Container className={classes.container} style={{ backgroundImage: props.project.bgimage }}  >
+        <Grid container spacing={8} className={classes.set}>
+          <Grid item xs={12} md={7} direction="column" className={classes.project}>
             <h1 className={classes.names}> {props.project.name}</h1>
             <h2 className={classes.tools} id={props.project.id} > {t(`mywork.${props.project.id}.tool`)}</h2>
             <p className={classes.descripts}> {t(`mywork.${props.project.id}.description`)}</p>
@@ -86,24 +93,23 @@ export default function Project(props) {
                 size='medium'
                 variant="outlined"
                 href={props.project.gitURL}> {t('projectButton.button2')} </Button> : null}
-          </div>
-          <Fade>
-            <div className={classes.imgWrap}>
+          </Grid>
+            <Grid item xs={12} md={5} direction="column" className={classes.imgWrap}>
               {(props.project.imgHover != null) ?
                 <img
-                  style={{ height: props.project.height, paddingTop: props.project.padding }}
+                  style={{ height: props.project.height}}
                   className={classes.pic}
                   src={props.project.img}
                   onMouseOver={e => (e.currentTarget.src = props.project.imgHover)}
                   onMouseOut={e => (e.currentTarget.src = props.project.img)}
                   alt={props.project.name} /> :
                 <img
-                  style={{ height: props.project.height, paddingTop: props.project.padding }}
+                  style={{ height: props.project.height }}
                   className={classes.pic}
                   src={props.project.img}
                   alt={props.project.name} />}
-            </div>
-          </Fade>
+            </Grid>
+          </Grid>
         </Container>
       </Fade>
     </div>

@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '3%'
   },
   introText: {
-    fontSize: 25,
+    fontSize: 20,
     textAlign: 'left',
     color: '#ECECEC'
   },
@@ -71,8 +72,8 @@ export default function Mywork(props) {
     <div className={classes.root}>
       <Fade>
         <Container className={classes.container} maxWidth='lg'>
-          <div className={classes.set}>
-            <div>
+          <Grid container spacing={5} className={classes.set}>
+            <Grid item xs={12} md={8}>
               <h1 className={classes.introTitle}>{t('aboutme.aboutTitle')}</h1>
               {/* <h1 className={classes.hi}> {t('aboutme.hi')}</h1> */}
               <p className={classes.introText}>{t('aboutme.aboutme1')}</p>
@@ -85,8 +86,8 @@ export default function Mywork(props) {
               </Link> {t('aboutme.aboutme5')} <Link to={'/contact'} className={classes.link}>
                   {t('aboutme.link2')}
                 </Link> {t('aboutme.aboutme6')}</p>
-            </div>
-            <div className={classes.imgWrap}>
+            </Grid>
+            <Grid item xs={12} md={4} className={classes.imgWrap}>
               <img
                 className={classes.profilePic}
                 src={process.env.PUBLIC_URL + '/images/profile.jpg'}
@@ -94,8 +95,8 @@ export default function Mywork(props) {
                 onMouseOver={e => (e.currentTarget.src = '/images/drawing.jpg')}
                 onMouseOut={e => (e.currentTarget.src = '/images/profile.jpg')}
               />
-            </div>
-          </div>
+            </Grid>
+          </Grid>
           {/* <div className={classes.set}>
           <div className={classes.imgWrap}>
             <img
