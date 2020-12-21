@@ -68,6 +68,9 @@ const useStyles = makeStyles((theme) => ({
   itemText: {
     color: '#ececec',
     fontFamily: 'Roboto Slab',
+  },
+  highlight:{
+    color: '#43807c'
   }
 }));
 
@@ -92,9 +95,9 @@ export default function Mywork(props) {
                   />
                   <Typography className={classes.itemText} variant="h6" align="justify">
                     {t('aboutme.exp1')}
-                    <b>{t('aboutme.note1')}</b>
+                    <b className = {classes.highlight}>{t('aboutme.note1')}</b>
                     {t('aboutme.exp11')}
-                    <b>{t('aboutme.note2')}</b>
+                    <b className = {classes.highlight}>{t('aboutme.note2')}</b>
                     {t('aboutme.exp12')}
                   </Typography>
                 </div>
@@ -121,7 +124,7 @@ export default function Mywork(props) {
                   />
                   <Typography className={classes.itemText} variant="h6" align="justify">
                     {t('aboutme.exp3')}
-                    <b>{t('aboutme.note6')}</b>
+                    <b className = {classes.highlight}>{t('aboutme.note6')}</b>
                     {t('aboutme.exp31')}
                   </Typography>
                 </div>

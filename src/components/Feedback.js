@@ -63,7 +63,8 @@ const useStyles = makeStyles((theme) => ({
   },
   feedbackText: {
     fontSize: 25,
-    color: '#ECECEC'
+    color: '#ECECEC', 
+    textAlign:'left'
   },
   image: {
     height: 70,
