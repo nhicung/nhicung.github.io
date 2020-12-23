@@ -52,15 +52,15 @@ const useStyles = makeStyles((theme) => ({
 	},
 	headerPos1: {
 		left: '5%',
-		backgroundColor: 'rgb(104, 176, 171, 0.5)',
+		// backgroundColor: 'rgb(104, 176, 171, 0.5)',
 	},
 	headerPos2: {
 		left: '48%',
-		backgroundColor: 'rgb(255, 245, 145,0.5)',
+		// backgroundColor: 'rgb(255, 245, 145,0.5)',
 	},
 	headerPos3: {
 		right: '5%',
-		backgroundColor: 'rgb(134, 117, 169,0.5)',
+		// backgroundColor: 'rgb(134, 117, 169,0.5)',
 	},
 	title: {
 		fontFamily: 'Montserrat',
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	iconList: {
 		display: 'flex',
-		paddingLeft: '20%',
+		paddingLeft: '15%',
 		paddingTop: '2%'
 	},
 	icon: {
@@ -104,28 +104,26 @@ const dataIcon = [
 		id: 1,
 		img: 'images/email.png',
 		title: 'email',
-		href: ''
+		href: 'mailto:cunghonglinhnhi@gmail.com?subject="subject text"'
 	},
-	// {
-	// 	id: 1,
-	// 	img: 'images/upwork.png',
-	// 	title: 'upwork',
-	// 	href: ''
-	// },
 	{
 		id: 2,
+		img: 'images/handshake.png',
+		title: 'upwork',
+		href: 'https://cgu.joinhandshake.com/users/29415787'
+	},
+	{
+		id: 3,
 		img: 'images/facebook.png',
 		title: 'facebook',
 		href: 'https://facebook.com/cungnhi'
 	},
 	{
-		id: 3,
+		id: 4,
 		img: 'images/instagram.png',
 		title: 'instagram',
 		href: 'https://instagram.com/cungnhi'
 	},
-
-
 ];
 
 
@@ -157,12 +155,12 @@ export default function Contact(props) {
 
 					<div className={classes.iconList}  >
 						{dataIcon.map((icon) => (
-							<IconButton className={classes.icon} size="small" icon={icon} key={icon.id}>
+							<IconButton className={classes.icon} size="small" icon={icon} key={icon.id} href = {icon.href} target='_blank'>
 								<img
 									height={80}
 									width={80}
 									src={icon.img}
-									alt={icon.title} />
+									alt={icon.title}/>
 							</IconButton>
 						))}
 						{/* <IconButton className={classes.icon} size="small">

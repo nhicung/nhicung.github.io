@@ -33,11 +33,11 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
   },
   introTitle: {
-    color: '#edd6cf',
+    color: '#ECECEC',
     textAlign: 'left',
     width: 700,
     paddingRight: 100,
-    fontSize: '50px',
+    fontSize: '44px',
     fontFamily: 'Roboto Slab',
     margin: 0,
   },
@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '3%'
   },
   introText: {
+    fontFamily: 'Montserrat',
     fontSize: 20,
     textAlign: 'left',
     color: '#ECECEC'

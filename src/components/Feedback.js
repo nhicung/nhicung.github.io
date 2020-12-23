@@ -23,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
     bottom: 0,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
+    fontFamily: 'Roboto Slab',
   },
   item1: {
     paddingTop: 40,
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     // alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#477ea0'
+    backgroundColor: '#477ea0',
   },
   item2: {
     paddingTop: 40,
@@ -41,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     // alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#477ea0'
+    backgroundColor: '#477ea0',
   },
   item3: {
     paddingTop: 40,
@@ -50,21 +51,23 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     // alignItems: 'center',
     padding: theme.spacing(0, 5),
-    backgroundColor: '#477ea0'
+    backgroundColor: '#477ea0',
   },
   title: {
-    color: '#b7cfdf',
+    color: '#ECECEC',
     textAlign: 'left',
     // width: 700,
     paddingRight: 100,
-    fontSize: '50px',
+    fontSize: '44px',
     fontFamily: 'Roboto Slab',
     margin: 0,
   },
   feedbackText: {
-    fontSize: 25,
-    color: '#ECECEC', 
-    textAlign:'left'
+    color: '#b7cfdf',
+    fontSize: 25, 
+    textAlign:'left',
+    fontStyle:'italic',
+    margin: 15,
   },
   image: {
     height: 70,
@@ -72,14 +75,18 @@ const useStyles = makeStyles((theme) => ({
   },
   itemText: {
     color: '#ececec',
-    fontFamily: 'Roboto Slab',
+    fontFamily: 'Montserrat',
   },
   name: {
     width: 300,
     color: '#ececec',
     fontSize: 15,
-    paddingBottom: 20,
-    paddingTop: 20
+    paddingBottom: 30,
+    paddingTop: 20,
+    textDecoration:'none',
+    '&:hover': {
+      textDecoration:'underline'
+    }
   }
 }));
 
@@ -102,9 +109,9 @@ export default function Feedback() {
                   <Typography className={classes.itemText} variant="h6" align="justify">
                     {t('aboutme.feed1')}
                   </Typography>
-                  <div className={classes.name}>
+                  <a className = {classes.name} target="_blank" href="https://www.lindsaycurrie.com/about-me">
                     <b>Lindsay C.</b> <i>- Author at Simon and Schuster</i>
-                  </div>
+                  </a>
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -112,9 +119,9 @@ export default function Feedback() {
                   <Typography className={classes.itemText} variant="h6" align="justify">
                     {t('aboutme.feed2')}
                   </Typography>
-                  <div className={classes.name}>
-                    <b>Monica M.</b><i>- President and CEO at CSEdResearch.org</i> 
-                  </div>
+                  <a className = {classes.name} target="_blank" href="https://www.linkedin.com/in/monicamcgill/">
+                    <b>Monica M.</b> <i>- President and CEO at CSEdResearch.org</i> 
+                  </a>
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -122,9 +129,10 @@ export default function Feedback() {
                   <Typography className={classes.itemText} variant="h6" align="justify">
                     {t('aboutme.feed3')}
                   </Typography>
-                  <div className={classes.name}>
+                  <a className = {classes.name} target="_blank" href="https://www.fourunitedrepublic.com/about-us">
                     <br />
-                    <b>Thomas H.</b> <i>- CEO at FOUR</i></div>
+                    <b>Thomas H.</b> <i>- CEO at FOUR</i>
+                  </a>
                 </div>
               </Grid>
             </Grid>

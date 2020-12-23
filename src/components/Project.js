@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   descripts: {
     fontFamily: 'Montserrat',
-    fontSize: '22px',
+    fontSize: '20px',
     textAlign:'justify'
   },
   button: {

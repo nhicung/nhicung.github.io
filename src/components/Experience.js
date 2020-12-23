@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     backgroundColor: '#68b0ab',
     height: 'auto',
-    width: 'auto',
+    maxWidth: 'auto',
     left: 0,
     right: 0,
     padding: 50,
@@ -23,18 +23,28 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center'
   },
   expTitle: {
-    color: '#c2dfdd',
+    width: 'auto',
+    color: '#ECECEC',
     textAlign: 'left',
     width: 900,
     paddingRight: 100,
-    fontSize: '50px',
+    fontSize: '44px',
     fontFamily: 'Roboto Slab',
     margin: 0,
   },
   expText: {
     fontSize: 25,
     textAlign: 'left',
-    color: '#ECECEC'
+    color: '#c2dfdd',
+    fontFamily: 'Roboto Slab',
+    fontStyle: 'italic',
+    margin: 15,
+  },
+  expType: {
+    color: '#ececec',
+    fontFamily: 'Montserrat',
+    fontSize: 23,
+
   },
   item1: {
     height: 'auto',
@@ -63,14 +73,18 @@ const useStyles = makeStyles((theme) => ({
   image: {
     height: 80,
     width: 80,
-    padding: 30,
   },
   itemText: {
     color: '#ececec',
-    fontFamily: 'Roboto Slab',
+    fontFamily: 'Montserrat',
   },
-  highlight:{
-    color: '#43807c'
+  link: {
+    fontWeight: 'bold',
+    color: '#ececec',
+    textDecoration: 'none',
+    '&:hover': {
+      textDecoration: 'underline'
+    }
   }
 }));
 
@@ -87,45 +101,49 @@ export default function Mywork(props) {
           <div>
             <Grid container spacing={5}>
               <Grid item xs={12} md={4}>
-                <div className={classes.item1}>
-                  <img
-                    src={process.env.PUBLIC_URL + '/images/campus.png'}
-                    alt="rating"
-                    className={classes.image}
-                  />
-                  <Typography className={classes.itemText} variant="h6" align="justify">
-                    {t('aboutme.exp1')}
-                    <b className = {classes.highlight}>{t('aboutme.note1')}</b>
-                    {t('aboutme.exp11')}
-                    <b className = {classes.highlight}>{t('aboutme.note2')}</b>
-                    {t('aboutme.exp12')}
-                  </Typography>
-                </div>
-              </Grid>
-              <Grid item xs={12} md={4}>
                 <div className={classes.item2}>
                   <img
-                    src={process.env.PUBLIC_URL + '/images/personal-computer.png'}
+                    src={process.env.PUBLIC_URL + '/images/people.png'}
                     alt="rating"
                     className={classes.image}
                   />
+                  <h3 className={classes.expType}> Gender Equality </h3>
                   <Typography className={classes.itemText} variant="h6" align="justify">
-                    {t('aboutme.exp2')}
-                    {t('aboutme.note3')}
+                    {t('aboutme.exp21')}
+                    <a className={classes.link} target="_blank" href="https://www.knox.edu/news/club-provides-support-for-women-in-computer-science">{t('aboutme.note3')}</a>
+                    {t('aboutme.exp22')}
                   </Typography>
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>
                 <div className={classes.item3}>
                   <img
-                    src={process.env.PUBLIC_URL + '/images/computer-2.png'}
+                    src={process.env.PUBLIC_URL + '/images/personal-computer.png'}
                     alt="rating"
                     className={classes.image}
                   />
+                  <h3 className={classes.expType}> Tech Support </h3>
                   <Typography className={classes.itemText} variant="h6" align="justify">
                     {t('aboutme.exp3')}
-                    <b className = {classes.highlight}>{t('aboutme.note6')}</b>
+                    <a className={classes.link} target="_blank" href="https://www.knox.edu/offices/information-technology-services">{t('aboutme.note4')}</a>
                     {t('aboutme.exp31')}
+                  </Typography>
+                </div>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <div className={classes.item1}>
+                  <img
+                    src={process.env.PUBLIC_URL + '/images/campus.png'}
+                    alt="rating"
+                    className={classes.image}
+                  />
+                  <h3 className={classes.expType}> Team Work </h3>
+                  <Typography className={classes.itemText} variant="h6" align="justify">
+                    {t('aboutme.exp1')}
+                    <a className={classes.link} target="_blank" href="https://www.knox.edu/offices/student-development/campus-life">{t('aboutme.note1')}</a>
+                    {t('aboutme.exp11')}
+                    <b>{t('aboutme.note2')}</b>
+                    {t('aboutme.exp12')}
                   </Typography>
                 </div>
               </Grid>

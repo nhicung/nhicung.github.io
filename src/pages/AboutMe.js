@@ -12,7 +12,6 @@ import Feedback from '../components/Feedback';
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'center',
-    fontFamily: 'Montserrat',
     height: 'auto%',
     width: 'auto',
     left: 0,
@@ -31,15 +30,15 @@ const useStyles = makeStyles((theme) => ({
   },
   headerPos1: {
     left: '5%',
-    backgroundColor: 'rgb(104, 176, 171, 0.5)',
+    // backgroundColor: 'rgb(104, 176, 171, 0.5)',
   },
   headerPos2: {
     left: '48%',
-    backgroundColor: 'rgb(255, 245, 145,0.5)',
+    // backgroundColor: 'rgb(255, 245, 145,0.5)',
   },
   headerPos3: {
     right: '5%',
-    backgroundColor: 'rgb(217, 173, 173,0.5)',
+    // backgroundColor: 'rgb(217, 173, 173,0.5)',
   },
   container: {
     // backgroundColor: 'rgb(212, 154, 137, 0.5)',

@@ -33,27 +33,27 @@ const useStyles = makeStyles((theme) => ({
 		backgroundPosition: 'center'
 	},
 	titleWrap: {
-		marginLeft: '35%',
-		fontFamily: 'Montserrat',
-		fontSize: 70,
+		marginLeft: '40%',
 		paddingTop: '100px',
-		width: '30%',
+		width: '20%',
 	},
 	title: {
 		backgroundColor: '#faf0af',
-		borderRadius: '25px'
+		borderRadius: '25px',
+		fontFamily: 'Montserrat',
+		fontSize: '60px',
 	},
 	headerPos1: {
 		left: '5%',
-		backgroundColor: 'rgb(217, 173, 173,0.5)',
+		// backgroundColor: 'rgb(217, 173, 173,0.5)',
 	},
 	headerPos2: {
 		right: '48%',
-		backgroundColor: 'rgb(255, 245, 145,0.5)',
+		// backgroundColor: 'rgb(255, 245, 145,0.5)',
 	},
 	headerPos3: {
 		right: '5%',
-		backgroundColor: 'rgb(104, 176, 171, 0.5)',
+		// backgroundColor: 'rgb(104, 176, 171, 0.5)',
 	},
 	clicked: {
 		width: 200,
@@ -85,7 +85,7 @@ export default function Mywork(props) {
 
 			{/* Title */}
 
-			<div className={classes.titleWrap} ><h className={classes.title}>{t('mywork.title')}</h></div>
+			<div className={classes.titleWrap} ><h1 className={classes.title}>{t('mywork.title')}</h1></div>
 
 			{/* Body */}
 
