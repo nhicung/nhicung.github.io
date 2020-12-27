@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import { useTranslation, withTranslation, Trans } from 'react-i18next';
 import './App.css';
 import { Route, HashRouter } from 'react-router-dom';
 import Footer from './components/Footer';
@@ -9,11 +8,6 @@ import Work from './pages/MyWork';
 import Contact from './pages/Contact';
 
 function Page() {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = lng => {
-    i18n.changeLanguage(lng);
-  };
 
   return (
     <div className="App">

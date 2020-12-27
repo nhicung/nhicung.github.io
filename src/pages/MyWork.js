@@ -6,6 +6,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import Project from '../components/Project';
 import ButtonHeader from '../components/ButtonHeader';
 import { useTranslation } from 'react-i18next';
+import Grid from '@material-ui/core/Grid';
 
 const theme = createMuiTheme({
 	palette: {
@@ -33,31 +34,29 @@ const useStyles = makeStyles((theme) => ({
 		backgroundPosition: 'center'
 	},
 	titleWrap: {
-		marginLeft: '40%',
-		paddingTop: '100px',
-		width: '20%',
+		textAlign: 'center',
+		paddingTop: '30px',
+		paddingBottom: '30px',
+		display: 'table',
+		margin: '0 auto',
 	},
 	title: {
 		backgroundColor: '#faf0af',
 		borderRadius: '25px',
 		fontFamily: 'Montserrat',
 		fontSize: '60px',
+		width: 'auto',
 	},
 	headerPos1: {
-		left: '5%',
-		// backgroundColor: 'rgb(217, 173, 173,0.5)',
+		padding: theme.spacing(0, 5),
 	},
 	headerPos2: {
-		right: '48%',
-		// backgroundColor: 'rgb(255, 245, 145,0.5)',
+		padding: theme.spacing(0, 5),
 	},
 	headerPos3: {
-		right: '5%',
-		// backgroundColor: 'rgb(104, 176, 171, 0.5)',
+		padding: theme.spacing(0, 5),
 	},
 	clicked: {
-		width: 200,
-		position: 'absolute',
 		transition: theme.transitions.create('opacity'),
 	},
 }));
@@ -70,17 +69,23 @@ export default function Mywork(props) {
 
 		<div className={classes.root}>
 			<div className={classes.header}>
-				<div>
-					<ButtonHeader className={classes.headerPos1} to={'/contact'}>
-						{t('buttons.button3')}
+				<Grid container spacing={1}>
+					<Grid item xs={12} md={4}>
+						<ButtonHeader className={classes.headerPos1} to={'/contact'}>
+							{t('buttons.button3')}
 						</ButtonHeader>
-					<ButtonHeader className={classes.headerPos2} to={'/'}>
-					{t('buttons.button4')}
+					</Grid>
+					<Grid item xs={12} md={4}>
+						<ButtonHeader className={classes.headerPos2} to={'/'}>
+							{t('buttons.button4')}
 						</ButtonHeader>
-					<ButtonHeader className={classes.headerPos3} to={'/about-me'}>
-					{t('buttons.button1')}
+					</Grid>
+					<Grid item xs={12} md={4}>
+						<ButtonHeader className={classes.headerPos3} to={'/about-me'}>
+							{t('buttons.button1')}
 						</ButtonHeader>
-				</div>
+					</Grid>
+				</Grid>
 			</div>
 
 			{/* Title */}
@@ -92,7 +97,7 @@ export default function Mywork(props) {
 			<ThemeProvider theme={theme}>
 				<div>
 					{dataProject.map((project, i) => (
-						<Project project={project}/>
+						<Project project={project} />
 					))}
 				</div>
 			</ThemeProvider >

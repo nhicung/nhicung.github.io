@@ -1,17 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import ExtensionIcon from '@material-ui/icons/Extension';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTranslation } from 'react-i18next';
 import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: 30,
+    // padding: 30,
   },
   container: {
     padding: 50,
@@ -106,7 +103,7 @@ export default function Feedback() {
             <Grid container spacing={5}>
               <Grid item xs={12} md={4}>
                 <div className={classes.item1}>
-                  <Typography className={classes.itemText} variant="h6" align="justify">
+                  <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.feed1')}
                   </Typography>
                   <a className = {classes.name} target="_blank" href="https://www.lindsaycurrie.com/about-me">
@@ -116,7 +113,7 @@ export default function Feedback() {
               </Grid>
               <Grid item xs={12} md={4}>
                 <div className={classes.item2}>
-                  <Typography className={classes.itemText} variant="h6" align="justify">
+                  <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.feed2')}
                   </Typography>
                   <a className = {classes.name} target="_blank" href="https://www.linkedin.com/in/monicamcgill/">
@@ -126,7 +123,7 @@ export default function Feedback() {
               </Grid>
               <Grid item xs={12} md={4}>
                 <div className={classes.item3}>
-                  <Typography className={classes.itemText} variant="h6" align="justify">
+                  <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.feed3')}
                   </Typography>
                   <a className = {classes.name} target="_blank" href="https://www.fourunitedrepublic.com/about-us">

@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: 25,
+    // padding: 25,
   },
   container: {
     backgroundColor: '#68b0ab',
@@ -23,10 +23,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center'
   },
   expTitle: {
-    width: 'auto',
     color: '#ECECEC',
     textAlign: 'left',
-    width: 900,
     paddingRight: 100,
     fontSize: '44px',
     fontFamily: 'Roboto Slab',
@@ -81,7 +79,6 @@ const useStyles = makeStyles((theme) => ({
   link: {
     fontWeight: 'bold',
     color: '#ececec',
-    textDecoration: 'none',
     '&:hover': {
       textDecoration: 'underline'
     }
@@ -108,7 +105,7 @@ export default function Mywork(props) {
                     className={classes.image}
                   />
                   <h3 className={classes.expType}> Gender Equality </h3>
-                  <Typography className={classes.itemText} variant="h6" align="justify">
+                  <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.exp21')}
                     <a className={classes.link} target="_blank" href="https://www.knox.edu/news/club-provides-support-for-women-in-computer-science">{t('aboutme.note3')}</a>
                     {t('aboutme.exp22')}
@@ -123,7 +120,7 @@ export default function Mywork(props) {
                     className={classes.image}
                   />
                   <h3 className={classes.expType}> Tech Support </h3>
-                  <Typography className={classes.itemText} variant="h6" align="justify">
+                  <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.exp3')}
                     <a className={classes.link} target="_blank" href="https://www.knox.edu/offices/information-technology-services">{t('aboutme.note4')}</a>
                     {t('aboutme.exp31')}
@@ -137,8 +134,8 @@ export default function Mywork(props) {
                     alt="rating"
                     className={classes.image}
                   />
-                  <h3 className={classes.expType}> Team Work </h3>
-                  <Typography className={classes.itemText} variant="h6" align="justify">
+                  <h3 className={classes.expType}> Community Involvement </h3>
+                  <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.exp1')}
                     <a className={classes.link} target="_blank" href="https://www.knox.edu/offices/student-development/campus-life">{t('aboutme.note1')}</a>
                     {t('aboutme.exp11')}

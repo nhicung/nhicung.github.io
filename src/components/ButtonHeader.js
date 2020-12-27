@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
 	header: {
 		position: 'fixed',
-		width: '100%',
+		width: 'auto',
 		height: 50,
 		zIndex: 1000,
 		backgroundColor: '#ECECEC'
@@ -16,20 +16,20 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Montserrat',
 		fontSize: 20,
 		color: 'black',
-		position: 'absolute',
+		// position: 'absolute',
 		top: '20px',
 
 		'&:hover $clicked': {
 			color: 'grey',
 			cursor: 'pointer',
-			textDecoration: 'line-through',
+			// textDecoration: 'line-through',
 			transition: 'all 200ms ease-in',
 			transform: 'scale(1.2)',
 		},
 	},
 	clicked: {
-		width: 200,
-		position: 'absolute',
+		// width: 0,
+		// position: 'absolute',
 		transition: theme.transitions.create('opacity'),
 	},
 }));

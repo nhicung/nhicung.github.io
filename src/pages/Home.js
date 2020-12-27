@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -26,37 +27,38 @@ const useStyles = makeStyles((theme) => ({
 		paddingTop: '5%',
 		fontFamily: 'Montserrat',
 		fontSize: 80,
-		marginTop: 0
+		marginTop: 0,
 	},
 	button: {
 		fontFamily: 'Montserrat',
 		fontSize: 30,
 		color: 'black',
-		position: 'absolute',
 		'&:hover $clicked': {
 			color: 'grey',
 			cursor: 'pointer',
-			textDecoration: 'line-through',
 			transition: 'all 200ms ease-in',
 			transform: 'scale(1.2)',
 		},
 	},
-	buttonPos1:{
-		width:50,
-		top: '45%',
-		left: '25%'
+	buttonPos1: {
+		padding: theme.spacing(0, 5),
+		// paddingTop:40,
+		// left: '25%'
 	},
-	buttonPos2:{
-		top: '57%',
-		right: '22%',
+	buttonPos2: {
+		padding: theme.spacing(0, 5),
+		// paddingTop:40,
+		// right: '22%',
 	},
-	buttonPos3:{
-		top: '88%',
-		left: '46%',
+	buttonPos3: {
+		padding: theme.spacing(0, 5),
+		// paddingTop:40,
+		// left: '46%',
 	},
 	clicked: {
-		width: 200,
-		position: 'absolute',
+		// width: 200,
+		// position: 'absolute',
+		transition: theme.transitions.create('opacity'),
 	},
 	hi: {
 		color: 'black',
@@ -68,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function Home({}) {
+export default function Home({ }) {
 	const classes = useStyles();
 	const { t, i18n } = useTranslation();
 
@@ -77,37 +79,48 @@ export default function Home({}) {
 		<div className={classes.root}>
 			<Fade top><div className={classes.name}>.Nhi Cung.</div></Fade>
 			<Fade top><p className={classes.hi}> {t('title')} </p></Fade>
-			<div>
-				<Button
-					classes={{
-						root: clsx(classes.button, classes.buttonPos1),
-						label: classes.clicked,
-					}}
-					component={Link} to={'/about-me'}
-					>
-					{t('buttons.button1')}
-                </Button>
-			</div>
 
 			<div>
-				<Button
-					classes={{
-						root: clsx(classes.button, classes.buttonPos2 ),
-						label: classes.clicked,
-					}}
-					component={Link} to={'/my-work'}>
-					{t('buttons.button2')}
-				</Button>
-			</div>
-			<div>
-				<Button
-					classes={{
-						root: clsx(classes.button, classes.buttonPos3 ),
-						label: classes.clicked,
-					}}
-					component={Link} to={'/contact'}>
-					{t('buttons.button3')}
-				</Button>
+				<Grid container spacing={1}>
+					<Grid item xs={12} md={4}>
+						<div>
+							<Button
+								classes={{
+									root: clsx(classes.button, classes.buttonPos1),
+									label: classes.clicked,
+								}}
+								component={Link} to={'/about-me'}
+							>
+								{t('buttons.button1')}
+							</Button>
+						</div>
+					</Grid>
+
+					<Grid item xs={12} md={4}>
+						<div>
+							<Button
+								classes={{
+									root: clsx(classes.button, classes.buttonPos2),
+									label: classes.clicked,
+								}}
+								component={Link} to={'/my-work'}>
+								{t('buttons.button2')}
+							</Button>
+						</div>
+					</Grid>
+					<Grid item xs={12} md={4}>
+						<div>
+							<Button
+								classes={{
+									root: clsx(classes.button, classes.buttonPos3),
+									label: classes.clicked,
+								}}
+								component={Link} to={'/contact'}>
+								{t('buttons.button3')}
+							</Button>
+						</div>
+					</Grid>
+				</Grid>
 			</div>
 		</div>
 	);

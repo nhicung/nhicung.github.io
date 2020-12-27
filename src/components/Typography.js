@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { capitalize } from '@material-ui/core/utils';
 import MuiTypography from '@material-ui/core/Typography';
-import clsx from 'clsx';
 
 const styles = (theme) => ({
   markedH2Center: {

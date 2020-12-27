@@ -1,18 +1,16 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Slide from 'react-reveal/Slide';
-import Fade from 'react-reveal/Fade';
-import { Link } from 'react-router-dom';
 import ButtonHeader from '../components/ButtonHeader';
 import { useTranslation } from 'react-i18next';
 import SelfIntro from '../components/SelfIntro';
 import Experience from '../components/Experience';
 import Feedback from '../components/Feedback';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'center',
-    height: 'auto%',
+    height: 'auto',
     width: 'auto',
     left: 0,
     right: 0,
@@ -24,22 +22,18 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: 'url(./images/aboutMebg.png)',
     backgroundPosition: 'center'
   },
-  clicked: {
-    width: 200,
-    position: 'absolute',
-  },
   headerPos1: {
-    left: '5%',
-    // backgroundColor: 'rgb(104, 176, 171, 0.5)',
-  },
-  headerPos2: {
-    left: '48%',
-    // backgroundColor: 'rgb(255, 245, 145,0.5)',
-  },
-  headerPos3: {
-    right: '5%',
-    // backgroundColor: 'rgb(217, 173, 173,0.5)',
-  },
+		padding: theme.spacing(0, 5),
+	},
+	headerPos2: {
+		padding: theme.spacing(0, 5),
+	},
+	headerPos3: {
+		padding: theme.spacing(0, 5),
+	},
+	clicked: {
+		transition: theme.transitions.create('opacity'),
+	},
   container: {
     // backgroundColor: 'rgb(212, 154, 137, 0.5)',
     textAlign: 'left',
@@ -79,6 +73,9 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     color: 'grey'
+  },
+  content: {
+    paddingBottom: 90,
   }
 }));
 
@@ -90,20 +87,31 @@ export default function LeftSide() {
     <div className={classes.root}>
       <div className={classes.header}>
         <div>
-          <ButtonHeader className={classes.headerPos1} to={'/my-work'}>
-            {t('buttons.button2')}
-          </ButtonHeader>
-          <ButtonHeader className={classes.headerPos2} to={'/'}>
-            {t('buttons.button4')}
-          </ButtonHeader>
-          <ButtonHeader className={classes.headerPos3} to={'/contact'}>
-            {t('buttons.button3')}
-          </ButtonHeader>
+          <Grid container spacing={1} className={classes.set}>
+            <Grid item xs={12} md={4}>
+              <ButtonHeader className={classes.headerPos1} to={'/my-work'}>
+                {t('buttons.button2')}
+              </ButtonHeader>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <ButtonHeader className={classes.headerPos2} to={'/'}>
+                {t('buttons.button4')}
+              </ButtonHeader>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <ButtonHeader className={classes.headerPos3} to={'/contact'}>
+                {t('buttons.button3')}
+              </ButtonHeader>
+            </Grid>
+          </Grid>
         </div>
-        <div>
+        <div className={classes.content}>
           <SelfIntro />
+          <br />
           <Experience />
+          <br />
           <Feedback />
+          <br />
         </div>
       </div>
       {/* <div className={classes.container} maxWidth="md">

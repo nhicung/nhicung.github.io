@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: 100,
-    padding: 50,
+    // padding: 50,
   },
   container: {
     backgroundColor: '#d49a89',

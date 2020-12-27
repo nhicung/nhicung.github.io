@@ -5,11 +5,13 @@ import IconButton from '@material-ui/core/IconButton';
 import Slide from 'react-reveal/Slide';
 import ButtonHeader from '../components/ButtonHeader';
 import { useTranslation } from 'react-i18next';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
+		textAlign: 'center',
 		fontFamily: 'Montserrat',
-		height: 'auto%',
+		height: 'auto',
 		width: 'auto',
 		left: 0,
 		right: 0,
@@ -21,64 +23,39 @@ const useStyles = makeStyles((theme) => ({
 		backgroundImage: 'url(./images/contactbg.png)',
 		backgroundPosition: 'center'
 	},
-	clicked: {
-		width: 200,
-		position: 'absolute',
-		transition: theme.transitions.create('opacity'),
-	},
-	header: {
-		position: 'fixed',
-		width: '100%',
-		height: 50,
-		zIndex: 1000,
-		backgroundColor: '#ECECEC'
-	},
-	headerStyle: {
-		fontFamily: 'Montserrat',
-		fontSize: 20,
-		color: 'black',
-		position: 'absolute',
-		top: '20px',
-		borderRadius: '25px',
-
-		'&:hover $clicked': {
-			borderRadius: '25px',
-			color: 'grey',
-			cursor: 'pointer',
-			textDecoration: 'underline',
-			transition: 'all 200ms ease-in',
-			transform: 'scale(1.2)',
-		},
-	},
 	headerPos1: {
-		left: '5%',
-		// backgroundColor: 'rgb(104, 176, 171, 0.5)',
+		padding: theme.spacing(0, 5),
 	},
 	headerPos2: {
-		left: '48%',
-		// backgroundColor: 'rgb(255, 245, 145,0.5)',
+		padding: theme.spacing(0, 5),
 	},
 	headerPos3: {
-		right: '5%',
-		// backgroundColor: 'rgb(134, 117, 169,0.5)',
+		padding: theme.spacing(0, 5),
+	},
+	clicked: {
+		transition: theme.transitions.create('opacity'),
 	},
 	title: {
 		fontFamily: 'Montserrat',
-		width: '30%',
-		marginLeft: '35%',
+		// width: '30%',
+		// marginLeft: '35%',
 		backgroundColor: '#faf0af',
-		borderRadius: '25px'
+		borderRadius: '25px',
+		display: 'table',
+		margin: '0 auto',
 	},
 	container: {
 		fontFamily: 'Montserrat',
 		textAlign: 'center',
-		paddingTop: '8%',
-		fontSize: '30px'
+		paddingTop: '10%', 
+		fontSize: '30px',
+		height: 'auto',
 	},
 	iconList: {
-		display: 'flex',
-		paddingLeft: '15%',
-		paddingTop: '2%'
+		// display: 'table',
+		margin: '0 auto',
+		// paddingLeft: '15%',
+		alignItems: 'center',
 	},
 	icon: {
 		margin: '3%',
@@ -134,36 +111,45 @@ export default function Contact(props) {
 		<div className={classes.root}>
 			<div className={classes.header}>
 				<div>
-					<ButtonHeader className={classes.headerPos1} to={'/about-me'}>
-						{t('buttons.button1')}
-					</ButtonHeader>
-					<ButtonHeader className={classes.headerPos2} to={'/'}>
-						{t('buttons.button4')}
-					</ButtonHeader>
-					<ButtonHeader className={classes.headerPos3} to={'/my-work'}>
-						{t('buttons.button2')}
-					</ButtonHeader>
+					<Grid container spacing={1} className={classes.set}>
+						<Grid item xs={12} md={4}>
+							<ButtonHeader className={classes.headerPos1} to={'/about-me'}>
+								{t('buttons.button1')}
+							</ButtonHeader>
+						</Grid>
+						<Grid item xs={12} md={4}>
+							<ButtonHeader className={classes.headerPos2} to={'/'}>
+								{t('buttons.button4')}
+							</ButtonHeader>
+						</Grid>
+						<Grid item xs={12} md={4}>
+							<ButtonHeader className={classes.headerPos3} to={'/my-work'}>
+								{t('buttons.button2')}
+							</ButtonHeader>
+						</Grid>
+					</Grid>
 				</div>
 			</div>
 
 			<Container maxWidth="md" className={classes.container}>
 				<Slide bottom>
-
-					<h1 className={classes.title}> {t('contact.title')}</h1>
-					{t('contact.contact1')} <br />
+					<h1 className={classes.title}> {t('contact.title')}</h1><br />
+					{t('contact.contact1')}
 					{t('contact.contact2')}
-
-					<div className={classes.iconList}  >
-						{dataIcon.map((icon) => (
-							<IconButton className={classes.icon} size="small" icon={icon} key={icon.id} href = {icon.href} target='_blank'>
-								<img
-									height={80}
-									width={80}
-									src={icon.img}
-									alt={icon.title}/>
-							</IconButton>
-						))}
-						{/* <IconButton className={classes.icon} size="small">
+					<div>
+						<Grid container spacing={5}>
+							<Grid item xs={12} md={12}>
+								<div className={classes.iconList}  >
+									{dataIcon.map((icon) => (
+										<IconButton className={classes.icon} size="small" icon={icon} key={icon.id} href={icon.href} target='_blank'>
+											<img
+												height={80}
+												width={80}
+												src={icon.img}
+												alt={icon.title} />
+										</IconButton>
+									))}
+									{/* <IconButton className={classes.icon} size="small">
 									<img
 										height={80}
 										width={80}
@@ -191,6 +177,9 @@ export default function Contact(props) {
 										src={process.env.PUBLIC_URL + '/images/instagram.png'}
 										alt='instagram' />
 								</IconButton> */}
+								</div>
+							</Grid>
+						</Grid>
 					</div>
 				</Slide>
 			</Container>
