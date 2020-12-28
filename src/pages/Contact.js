@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
 	container: {
 		fontFamily: 'Montserrat',
 		textAlign: 'center',
-		paddingTop: '10%', 
+		paddingTop: '10%',
 		fontSize: '30px',
 		height: 'auto',
 	},
@@ -56,6 +56,7 @@ const useStyles = makeStyles((theme) => ({
 		margin: '0 auto',
 		// paddingLeft: '15%',
 		alignItems: 'center',
+		paddingBottom:150
 	},
 	icon: {
 		margin: '3%',

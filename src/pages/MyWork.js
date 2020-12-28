@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		textAlign: 'center',
 		fontFamily: 'Montserrat',
-		height: 'auto%',
+		height: 'auto',
 		width: 'auto',
 		left: 0,
 		right: 0,
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 	titleWrap: {
 		textAlign: 'center',
 		paddingTop: '30px',
-		paddingBottom: '30px',
+		// paddingBottom: '30px',
 		display: 'table',
 		margin: '0 auto',
 	},
@@ -48,16 +48,13 @@ const useStyles = makeStyles((theme) => ({
 		width: 'auto',
 	},
 	headerPos1: {
-		padding: theme.spacing(0, 5),
+		padding: theme.spacing(0, 1),
 	},
 	headerPos2: {
-		padding: theme.spacing(0, 5),
+		padding: theme.spacing(0, 1),
 	},
 	headerPos3: {
-		padding: theme.spacing(0, 5),
-	},
-	clicked: {
-		transition: theme.transitions.create('opacity'),
+		padding: theme.spacing(0, 1),
 	},
 }));
 

@@ -23,60 +23,20 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center'
   },
   headerPos1: {
-		padding: theme.spacing(0, 5),
+		padding: theme.spacing(0, 1),
 	},
 	headerPos2: {
-		padding: theme.spacing(0, 5),
+		padding: theme.spacing(0, 1),
 	},
 	headerPos3: {
-		padding: theme.spacing(0, 5),
-	},
-	clicked: {
-		transition: theme.transitions.create('opacity'),
+		padding: theme.spacing(0, 1),
 	},
   container: {
     // backgroundColor: 'rgb(212, 154, 137, 0.5)',
     textAlign: 'left',
     display: 'flex',
   },
-  hi: {
-    width: '80%',
-    // backgroundColor: '#faf0af',
-    borderRadius: '25px',
-    fontSize: '70px'
-  },
-  profilePic: {
-    // backgroundColor:'rgb(212, 154, 137)',
-    height: '500px',
-    padding: '5%',
-    marginTop: '3%'
-  },
-  langPic: {
-    // backgroundColor:'#68b0ab',
-    height: '200%',
-    padding: '5%',
-    marginTop: '3%'
-  },
-  description: {
-    width: '70%',
-    color: 'black',
-    padding: '5%',
-    marginTop: '3%'
-  },
-  descriptionLast: {
-    width: '70%',
-    color: 'black',
-    paddingLeft: '30%'
-  },
-  descript: {
-    fontSize: '60px'
-  },
-  link: {
-    color: 'grey'
-  },
-  content: {
-    paddingBottom: 90,
-  }
+  
 }));
 
 export default function LeftSide() {

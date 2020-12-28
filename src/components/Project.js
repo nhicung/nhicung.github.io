@@ -10,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    // marginTop: 50,
-    marginBottom:100,
+    marginTop: 50,
+    paddingBottom:80,
+    paddingTop:50,
     // height: '450px',
     height: 'auto',
     width: 'auto',
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     // padding: 'auto',
     // margin:'auto'
     marginTop: 'auto',
-    marginBottom: 'auto'
+    paddingBottom: 'auto'
   },
   project: {
     color: '#ECECEC',
@@ -42,12 +43,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '44px',
     fontFamily: 'Roboto Slab',
     margin: 0,
+    textAlign: 'left'
   },
   tools: {
     color: '#e8e8e8',
     fontFamily: 'Roboto Slab',
     margin: 0,
-    fontStyle: 'italic'
+    fontStyle: 'italic',
+    textAlign: 'left'
   },
   descripts: {
     fontFamily: 'Montserrat',
@@ -66,6 +69,8 @@ const useStyles = makeStyles((theme) => ({
   },
   pic: {
     margin: 'auto',
+    height:'auto',
+    maxWidth:'100%'
     // display: 'block',
   },
 }));
@@ -109,7 +114,7 @@ export default function Project(props) {
                   onMouseOut={e => (e.currentTarget.src = props.project.img)}
                   alt={props.project.name} /> :
                 <img
-                  style={{ height: props.project.height }}
+                  style={{ maxHeight: props.project.height }}
                   className={classes.pic}
                   src={props.project.img}
                   alt={props.project.name} />}

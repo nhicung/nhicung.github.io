@@ -50,7 +50,7 @@ export default function Footer(props) {
   return (
     <Container className={classes.footer} maxWidth='xl'>
       <div>
-        <Grid container spacing={1}>
+        <Grid container>
           <Grid item xs={12} md={4}>
             <div className={classes.copyright} align="center">
               @Copyright Nhi Cung 2020
