@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
 		margin: '0 auto',
 		// paddingLeft: '15%',
 		alignItems: 'center',
-		paddingBottom:150
+		paddingBottom:130
 	},
 	icon: {
 		margin: '3%',
