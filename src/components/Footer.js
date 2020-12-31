@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Footer(props) {
+export default function Footer() {
   const classes = useStyles();
   const { t, i18n } = useTranslation();
   const changeLanguage = lng => {
@@ -77,7 +77,7 @@ export default function Footer(props) {
             <div className={classes.contact} align="center" >
               <IconButton className={classes.IconButton} href='https://facebook.com/cungnhi' target='_blank'><FacebookIcon /></IconButton>
               <IconButton className={classes.IconButton} href='https://instagram.com/cungnhi' target='_blank'><InstagramIcon /></IconButton>
-              <IconButton className={classes.IconButton} href={'mailto:' + props.email}><EmailIcon /></IconButton>
+              <IconButton className={classes.IconButton} href={'mailto:cunghonglinhnhi@gmail.com?subject="subject text"'}><EmailIcon /></IconButton>
               <IconButton className={classes.IconButton} href='https://github.com/nhicung/my-portfolio' target='_blank'><GitHubIcon /></IconButton>
               <IconButton className={classes.IconButton} href='https://www.linkedin.com/in/nhicung/' target='_blank'><LinkedInIcon /></IconButton>
             </div>

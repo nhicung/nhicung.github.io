@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'center',
 		paddingTop: '5%',
 		fontFamily: 'Montserrat',
-		fontSize: 80,
+		fontSize: 68,
 		marginTop: 0,
 	},
 	button: {
