@@ -102,9 +102,13 @@ export default function Mywork(props) {
 
 			<ThemeProvider theme={theme}>
 				<div>
-					{dataProject.map((project, i) => (
-						<Project project={project} />
-					))}
+					<Grid container spacing={5} className={classes.set}>
+						<Grid item xs={12} md={12}>
+							{dataProject.map((project, i) => (
+								<Project project={project} />
+							))}
+						</Grid>
+					</Grid>
 				</div>
 			</ThemeProvider >
 		</div>

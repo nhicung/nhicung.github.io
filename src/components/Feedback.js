@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Montserrat',
   },
   name: {
-    width: 300,
+    width: 'auto',
     color: '#ececec',
     fontSize: 15,
     paddingBottom: 30,

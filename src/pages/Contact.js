@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		textAlign: 'center',
 		fontFamily: 'Montserrat',
-		height: 'auto',
+		height: '100%',
 		width: 'auto',
 		left: 0,
 		right: 0,
