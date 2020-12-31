@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     padding: 50,
+    paddingBottom:50,
     backgroundColor: '#4e89ae',
     height: 'auto',
     width: 'auto',
@@ -24,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     fontFamily: 'Roboto Slab',
+    marginBottom:80,
   },
   item1: {
     paddingTop: 40,

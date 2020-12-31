@@ -35,14 +35,24 @@ const useStyles = makeStyles((theme) => ({
 	clicked: {
 		transition: theme.transitions.create('opacity'),
 	},
-	title: {
-		fontFamily: 'Montserrat',
-		// width: '30%',
-		// marginLeft: '35%',
-		backgroundColor: '#faf0af',
-		borderRadius: '25px',
+	titleWrap: {
+		textAlign: 'center',
+		// paddingBottom: '30px',
 		display: 'table',
 		margin: '0 auto',
+
+	},
+	titleColor: {
+		backgroundColor: '#faf0af',
+		borderRadius: '25px',
+		height: 80,
+		paddingLeft: 10,
+		paddingRight: 10,
+	},
+	title: {
+		fontFamily: 'Montserrat',
+		fontSize: '60px',
+		width: 'auto',
 	},
 	container: {
 		fontFamily: 'Montserrat',
@@ -56,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
 		margin: '0 auto',
 		// paddingLeft: '15%',
 		alignItems: 'center',
-		paddingBottom:130
+		paddingBottom: 150
 	},
 	icon: {
 		margin: '3%',
@@ -134,7 +144,12 @@ export default function Contact(props) {
 
 			<Container maxWidth="md" className={classes.container}>
 				<Slide bottom>
-					<h1 className={classes.title}> {t('contact.title')}</h1><br />
+					<div className={classes.titleWrap}>
+						<div className={classes.titleColor}>
+							<h1 className={classes.title}> {t('contact.title')}</h1>
+						</div>
+					</div>
+					<br />
 					{t('contact.contact1')}
 					{t('contact.contact2')}
 					<div>

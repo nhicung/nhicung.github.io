@@ -18,8 +18,6 @@ function Page() {
         <Route path={'/contact'} component={Contact} />
         <Footer />
       </HashRouter>
-      
-
     </div>
   );
 }

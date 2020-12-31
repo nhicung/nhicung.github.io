@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
   introTitle: {
     color: '#ECECEC',
     textAlign: 'left',
-    width: 700,
     paddingRight: 100,
     fontSize: '44px',
     fontFamily: 'Roboto Slab',

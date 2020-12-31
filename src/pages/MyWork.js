@@ -35,14 +35,19 @@ const useStyles = makeStyles((theme) => ({
 	},
 	titleWrap: {
 		textAlign: 'center',
-		paddingTop: '30px',
 		// paddingBottom: '30px',
 		display: 'table',
 		margin: '0 auto',
+
 	},
-	title: {
+	titleColor: {
 		backgroundColor: '#faf0af',
 		borderRadius: '25px',
+		height: 80,
+		paddingLeft: 10,
+		paddingRight: 10,
+	},
+	title: {
 		fontFamily: 'Montserrat',
 		fontSize: '60px',
 		width: 'auto',
@@ -87,7 +92,11 @@ export default function Mywork(props) {
 
 			{/* Title */}
 
-			<div className={classes.titleWrap} ><h1 className={classes.title}>{t('mywork.title')}</h1></div>
+			<div className={classes.titleWrap} >
+				<div className={classes.titleColor}>
+					<h1 className={classes.title}>{t('mywork.title')}</h1>
+				</div>
+			</div>
 
 			{/* Body */}
 
