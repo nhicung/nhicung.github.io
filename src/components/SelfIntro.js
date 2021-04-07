@@ -95,7 +95,7 @@ export default function Mywork(props) {
                 src={process.env.PUBLIC_URL + '/images/profile-new.png'}
                 alt='Nhi Cung'
                 onMouseOver={e => (e.currentTarget.src = '/images/drawing.jpg')}
-                onMouseOut={e => (e.currentTarget.src = '/images/profile.jpg')}
+                onMouseOut={e => (e.currentTarget.src = '/images/profile-new.png')}
               />
             </Grid>
           </Grid>
