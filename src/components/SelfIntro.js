@@ -92,7 +92,7 @@ export default function Mywork(props) {
             <Grid item xs={12} md={4} className={classes.imgWrap}>
               <img
                 className={classes.profilePic}
-                src={process.env.PUBLIC_URL + '/images/profile.jpg'}
+                src={process.env.PUBLIC_URL + '/images/profile-new.png'}
                 alt='Nhi Cung'
                 onMouseOver={e => (e.currentTarget.src = '/images/drawing.jpg')}
                 onMouseOut={e => (e.currentTarget.src = '/images/profile.jpg')}
