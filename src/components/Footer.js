@@ -78,7 +78,7 @@ export default function Footer() {
               <IconButton className={classes.IconButton} href='https://facebook.com/cungnhi' target='_blank'><FacebookIcon /></IconButton>
               <IconButton className={classes.IconButton} href='https://instagram.com/cungnhi' target='_blank'><InstagramIcon /></IconButton>
               <IconButton className={classes.IconButton} href={'mailto:cunghonglinhnhi@gmail.com?subject="subject text"'}><EmailIcon /></IconButton>
-              <IconButton className={classes.IconButton} href='https://github.com/nhicung/my-portfolio' target='_blank'><GitHubIcon /></IconButton>
+              <IconButton className={classes.IconButton} href='https://github.com/nhicung' target='_blank'><GitHubIcon /></IconButton>
               <IconButton className={classes.IconButton} href='https://www.linkedin.com/in/nhicung/' target='_blank'><LinkedInIcon /></IconButton>
             </div>
           </Grid>
