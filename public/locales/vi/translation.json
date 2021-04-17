@@ -47,6 +47,10 @@
   },
   "mywork": {
     "title":"Công Việc",
+    "restaurant": {
+      "tool": "sử dụng Java, SQL, Android Studio",
+      "description": "Đây là ứng dụng app chạy trên hệ Android, dành cho người dùng lưu thông tin nhà hàng và món ăn yêu thích của bản thân."
+    },
     "cungdesign": {
       "tool": "sử dụng ReactJs, HTML, CSS",
       "description": "Đây là một trang web mình code và thiết kế. Trang web này giới thiệu và triển lãm tranh và sản phẩm của Cung Design."

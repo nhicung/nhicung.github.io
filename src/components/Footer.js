@@ -53,7 +53,7 @@ export default function Footer() {
         <Grid container>
           <Grid item xs={12} md={4}>
             <div className={classes.copyright} align="center">
-              @Copyright Nhi Cung 2020
+            &#169;Copyright Nhi Cung 2020
             </div >
           </Grid>
           <Grid item xs={12} md={4}>

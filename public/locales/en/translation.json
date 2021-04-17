@@ -1,5 +1,5 @@
 {
-  "title": "A developer who enjoys creating products to improve human life.",
+  "title": "A developer who enjoys creating interactive and user-friendly productions to improve human life.",
   "buttons": {
     "button1": ".About Me.",
     "button2": ".My Work.",
@@ -47,6 +47,10 @@
   },
   "mywork": {
     "title":"My Work",
+    "restaurant": {
+      "tool": "with Java, SQL, Android Studio",
+      "description": "An Android App for users to save their favorite restaurants and rate their dishes that belong to the restaurants."
+    },
     "cungdesign": {
       "tool": "with ReactJs, HTML, CSS",
       "description": "This is a multi-page website I designed and coded as a personal project. The website showcases artworks made by Cung Design."

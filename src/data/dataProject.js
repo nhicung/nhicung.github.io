@@ -1,5 +1,18 @@
 const description = [
 	{
+		id: 'restaurant',
+		color:'#d49a89',
+		height:'360px',
+		img:  'images/Restaurant.png',
+		imgHover:  'images/RestaurantRate.png',
+		bgimage: 'url(./images/androidbg.png)',
+		type: 'phone',
+		name: 'Restaurant Rater',
+		tool: 'with Java, SQL, Android Studio',
+		description: 'An Android App for users to save their favorite restaurants and rate their dishes that belong to the restaurants.',
+		gitURL:'https://github.com/nhicung/restaurant-rater'
+	},
+	{
 		id: 'cungdesign',
 		color:'#d49a89',
 		height:'240px',
@@ -39,11 +52,11 @@ const description = [
 	{
 		id: 'squirrel',
 		color:'#ba7967',
-		height:'320px',
+		height:'360px',
 		img:  'images/MenuSquirrel1.png',
 		imgHover:  'images/MenuSquirrelHover.png',
 		bgimage: 'url(./images/squirrelbg.png)',
-		type: '.Game',
+		type: 'phone',
 		name: 'Squishy Squirrel',
 		tool: 'with Unity, C#, Adobe Illustrator',
 		description:'This 2D mobile game was coded and designed by a team of three for the purpose of improving student\'s awareness of healthy nutrition for squirrels. ',
@@ -65,11 +78,11 @@ const description = [
 	{
 		id: 'message',
 		color:'#d9adad',
-		height:'320px',
+		height:'360px',
 		img: 'images/message3.png',
 		imgHover: 'images/messageHover.png',
 		bgimage: 'url(./images/messagebg.png)',
-		type: '.Phone',
+		type: 'phone',
 		name: 'Virtual Message',
 		tool: 'with ReactJs, HTML, CSS',
 		description:'I coded and designed this simple app to send birthday and graduation congratulation message to my friends during the COVID-19.',

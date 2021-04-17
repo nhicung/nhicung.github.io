@@ -6,22 +6,20 @@ import Slide from 'react-reveal/Slide';
 import ButtonHeader from '../components/ButtonHeader';
 import { useTranslation } from 'react-i18next';
 import Grid from '@material-ui/core/Grid';
+import { useTheme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		textAlign: 'center',
 		fontFamily: 'Montserrat',
-		height: '100%',
+		height: '100vh',
 		width: 'auto',
-		left: 0,
-		right: 0,
-		top: 0,
-		bottom: 0,
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',
-		position: 'absolute',
 		backgroundImage: 'url(./images/contactbg.png)',
-		backgroundPosition: 'center'
+		backgroundPosition: 'center', 
+		margin: 0, 
+		padding: 0,
 	},
 	headerPos1: {
 		padding: theme.spacing(0, 5),
@@ -57,16 +55,19 @@ const useStyles = makeStyles((theme) => ({
 	container: {
 		fontFamily: 'Montserrat',
 		textAlign: 'center',
-		paddingTop: '10%',
+		paddingTop: 0,
+    [theme.breakpoints.up('md')]:{
+      paddingTop: '5%',
+    },
 		fontSize: '30px',
-		height: 'auto',
+		height: '100%',
 	},
 	iconList: {
 		// display: 'table',
 		margin: '0 auto',
 		// paddingLeft: '15%',
 		alignItems: 'center',
-		paddingBottom: 150
+		paddingBottom: 95
 	},
 	icon: {
 		margin: '3%',
