@@ -20,6 +20,13 @@ const useStyles = makeStyles((theme) => ({
 		backgroundPosition: 'center', 
 		margin: 0, 
 		padding: 0,
+		position: 'absolute',
+	},
+	set:{
+		[theme.breakpoints.up('sm')]: {
+      display: 'flex',
+    },
+    display: 'none',
 	},
 	headerPos1: {
 		padding: theme.spacing(0, 5),

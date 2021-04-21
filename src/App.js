@@ -6,18 +6,21 @@ import Home from './pages/Home';
 import About from './pages/AboutMe';
 import Work from './pages/MyWork';
 import Contact from './pages/Contact';
-import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import ResponsiveMenu from './components/ResponsiveMenu.js';
 
 const theme = createMuiTheme({
 
 });
 
 function Page() {
-
   return (
     <ThemeProvider theme={theme}>
+
       <div className="App">
+
         <HashRouter basename='/'>
+          <ResponsiveMenu />
           <Route exact path={'/'} component={Home} />
           <Route path={'/about-me'} component={About} />
           <Route path={'/my-work'} component={Work} />

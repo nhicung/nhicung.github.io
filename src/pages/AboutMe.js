@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
     backgroundImage: 'url(./images/aboutMebg.png)',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
+    position: 'absolute',
   },
   headerPos1: {
 		padding: theme.spacing(0, 1),
@@ -31,10 +32,11 @@ const useStyles = makeStyles((theme) => ({
 	headerPos3: {
 		padding: theme.spacing(0, 1),
 	},
-  container: {
-    // backgroundColor: 'rgb(212, 154, 137, 0.5)',
-    textAlign: 'left',
-    display: 'flex',
+  set: {
+    [theme.breakpoints.up('sm')]: {
+      display: 'flex',
+    },
+    display: 'none',
   },
   
 }));

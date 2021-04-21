@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	name: {
 		textAlign: 'center',
-		paddingTop: '5%',
+		paddingTop: '8%',
 		fontFamily: 'Montserrat',
 		fontSize: 68,
 		marginTop: 0,

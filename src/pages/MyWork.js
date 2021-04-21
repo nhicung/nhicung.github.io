@@ -31,7 +31,8 @@ const useStyles = makeStyles((theme) => ({
 		backgroundRepeat: 'no-repeat',
 		backgroundAttachment: 'fixed',
 		backgroundImage: 'url(./images/myWorkbg.png)',
-		backgroundPosition: 'center'
+		backgroundPosition: 'center',
+		position: 'absolute',
 	},
 	titleWrap: {
 		textAlign: 'center',
@@ -52,6 +53,12 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '60px',
 		width: 'auto',
 	},
+	set:{
+		[theme.breakpoints.up('sm')]: {
+      display: 'flex',
+    },
+    display: 'none',
+	},
 	headerPos1: {
 		padding: theme.spacing(0, 1),
 	},
@@ -71,7 +78,7 @@ export default function Mywork(props) {
 
 		<div className={classes.root}>
 			<div className={classes.header}>
-				<Grid container spacing={1}>
+				<Grid container spacing={1} className = {classes.set}>
 					<Grid item xs={12} md={4}>
 						<ButtonHeader className={classes.headerPos1} to={'/contact'}>
 							{t('buttons.button3')}
@@ -102,7 +109,7 @@ export default function Mywork(props) {
 
 			<ThemeProvider theme={theme}>
 				<div>
-					<Grid container  className={classes.set}>
+					<Grid container  className={classes.container}>
 						<Grid item xs={12} md={12}>
 							{dataProject.map((project, i) => (
 								<Project project={project} />
