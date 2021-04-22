@@ -25,9 +25,12 @@ function Page() {
           <Route path={'/about-me'} component={About} />
           <Route path={'/my-work'} component={Work} />
           <Route path={'/contact'} component={Contact} />
-          <Footer />
         </HashRouter>
       </div>
+      <div>
+ 
+      </div>
+      
     </ThemeProvider>
   );
 }

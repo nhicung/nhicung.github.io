@@ -13,16 +13,16 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    position:'fixed',
+    // position:'fixed',
     backgroundColor: '#ECECEC',
     height: 'auto',
-    width: 'auto',
+    width: '100%',
     left: 0,
     right: 0,
     bottom: 0,
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundPosition: 'center',
     alignItems: 'center',
   },
   contact: {

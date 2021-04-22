@@ -6,6 +6,7 @@ import SelfIntro from '../components/SelfIntro';
 import Experience from '../components/Experience';
 import Feedback from '../components/Feedback';
 import Grid from '@material-ui/core/Grid';
+import Footer from '../components/Footer'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,24 +22,23 @@ const useStyles = makeStyles((theme) => ({
     backgroundAttachment: 'fixed',
     backgroundImage: 'url(./images/aboutMebg.png)',
     backgroundPosition: 'center',
-    position: 'absolute',
   },
   headerPos1: {
-		padding: theme.spacing(0, 1),
-	},
-	headerPos2: {
-		padding: theme.spacing(0, 1),
-	},
-	headerPos3: {
-		padding: theme.spacing(0, 1),
-	},
+    padding: theme.spacing(0, 1),
+  },
+  headerPos2: {
+    padding: theme.spacing(0, 1),
+  },
+  headerPos3: {
+    padding: theme.spacing(0, 1),
+  },
   set: {
     [theme.breakpoints.up('sm')]: {
       display: 'flex',
     },
     display: 'none',
   },
-  
+
 }));
 
 export default function LeftSide() {
@@ -67,15 +67,16 @@ export default function LeftSide() {
             </Grid>
           </Grid>
         </div>
-        <div className={classes.content}>
-          <SelfIntro />
-          <br />
-          <Experience />
-          <br />
-          <Feedback />
-          <br />
-        </div>
       </div>
+      <div className={classes.content}>
+        <SelfIntro />
+        <br />
+        <Experience />
+        <br />
+        <Feedback />
+        <br />
+      </div>
+      <Footer/>
       {/* <div className={classes.container} maxWidth="md">
         <Slide left>
           <div className={classes.description}>

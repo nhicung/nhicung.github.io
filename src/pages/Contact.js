@@ -7,13 +7,14 @@ import ButtonHeader from '../components/ButtonHeader';
 import { useTranslation } from 'react-i18next';
 import Grid from '@material-ui/core/Grid';
 import { useTheme } from '@material-ui/core/styles';
+import Footer from '../components/Footer'
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		textAlign: 'center',
 		fontFamily: 'Montserrat',
 		height: '100vh',
-		width: 'auto',
+		width: '100%',
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',
 		backgroundImage: 'url(./images/contactbg.png)',
@@ -67,7 +68,6 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: '5%',
     },
 		fontSize: '30px',
-		height: '100%',
 	},
 	iconList: {
 		// display: 'table',
@@ -84,8 +84,10 @@ const useStyles = makeStyles((theme) => ({
 			cursor: 'pointer',
 		},
 	},
-	effect: {
-		width: '70%'
+	footer: {
+		position: 'absolute',
+		width:'100%',
+		bottom: 0
 	}
 }));
 
@@ -207,6 +209,9 @@ export default function Contact(props) {
 					</div>
 				</Slide>
 			</Container>
+			<div className={classes.footer}>
+				<Footer />
+			</div>
 		</div >
 	);
 }

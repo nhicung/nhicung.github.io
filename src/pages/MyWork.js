@@ -7,6 +7,7 @@ import Project from '../components/Project';
 import ButtonHeader from '../components/ButtonHeader';
 import { useTranslation } from 'react-i18next';
 import Grid from '@material-ui/core/Grid';
+import Footer from '../components/Footer'
 
 const theme = createMuiTheme({
 	palette: {
@@ -31,8 +32,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundRepeat: 'no-repeat',
 		backgroundAttachment: 'fixed',
 		backgroundImage: 'url(./images/myWorkbg.png)',
-		backgroundPosition: 'center',
-		position: 'absolute',
+		backgroundPosition: 'center'
 	},
 	titleWrap: {
 		textAlign: 'center',
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 		width: 'auto',
 	},
 	set:{
-		[theme.breakpoints.up('sm')]: {
+[theme.breakpoints.up('sm')]: {
       display: 'flex',
     },
     display: 'none',
@@ -118,6 +118,7 @@ export default function Mywork(props) {
 					</Grid>
 				</div>
 			</ThemeProvider >
+			<Footer/>
 		</div>
 
 	);

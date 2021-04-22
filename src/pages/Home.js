@@ -6,6 +6,7 @@ import Fade from 'react-reveal/Fade';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import Grid from '@material-ui/core/Grid';
+import Footer from '../components/Footer'
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -67,7 +68,11 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'center',
 		fontFamily: 'Montserrat',
 	},
-
+	footer: {
+		position: 'absolute',
+		width:'100%',
+		bottom: 0
+	}
 }));
 
 export default function Home({ }) {
@@ -75,53 +80,57 @@ export default function Home({ }) {
 	const { t, i18n } = useTranslation();
 
 	return (
-		// <div className="App">
-		<div className={classes.root}>
-			<Fade top><div className={classes.name}>.Nhi Cung.</div></Fade>
-			<Fade top><p className={classes.hi}> {t('title')} </p></Fade>
+		<React.Fragment>
+			<div className={classes.root}>
+				<Fade top><div className={classes.name}>.Nhi Cung.</div></Fade>
+				<Fade top><p className={classes.hi}> {t('title')} </p></Fade>
 
-			<div>
-				<Grid container spacing={1}>
-					<Grid item xs={12} md={4}>
-						<div>
-							<Button
-								classes={{
-									root: clsx(classes.button, classes.buttonPos1),
-									label: classes.clicked,
-								}}
-								component={Link} to={'/about-me'}
-							>
-								{t('buttons.button1')}
-							</Button>
-						</div>
-					</Grid>
+				<div>
+					<Grid container spacing={1}>
+						<Grid item xs={12} md={4}>
+							<div>
+								<Button
+									classes={{
+										root: clsx(classes.button, classes.buttonPos1),
+										label: classes.clicked,
+									}}
+									component={Link} to={'/about-me'}
+								>
+									{t('buttons.button1')}
+								</Button>
+							</div>
+						</Grid>
 
-					<Grid item xs={12} md={4}>
-						<div>
-							<Button
-								classes={{
-									root: clsx(classes.button, classes.buttonPos2),
-									label: classes.clicked,
-								}}
-								component={Link} to={'/my-work'}>
-								{t('buttons.button2')}
-							</Button>
-						</div>
+						<Grid item xs={12} md={4}>
+							<div>
+								<Button
+									classes={{
+										root: clsx(classes.button, classes.buttonPos2),
+										label: classes.clicked,
+									}}
+									component={Link} to={'/my-work'}>
+									{t('buttons.button2')}
+								</Button>
+							</div>
+						</Grid>
+						<Grid item xs={12} md={4}>
+							<div>
+								<Button
+									classes={{
+										root: clsx(classes.button, classes.buttonPos3),
+										label: classes.clicked,
+									}}
+									component={Link} to={'/contact'}>
+									{t('buttons.button3')}
+								</Button>
+							</div>
+						</Grid>
 					</Grid>
-					<Grid item xs={12} md={4}>
-						<div>
-							<Button
-								classes={{
-									root: clsx(classes.button, classes.buttonPos3),
-									label: classes.clicked,
-								}}
-								component={Link} to={'/contact'}>
-								{t('buttons.button3')}
-							</Button>
-						</div>
-					</Grid>
-				</Grid>
+				</div >
 			</div>
-		</div>
+			<div className={classes.footer}>
+				<Footer />
+			</div>
+		</React.Fragment>
 	);
 }

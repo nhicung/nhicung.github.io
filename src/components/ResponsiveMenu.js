@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
     display: 'flex',
+    position:'absolute'
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
