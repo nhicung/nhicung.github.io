@@ -16,20 +16,15 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Montserrat',
 		fontSize: 20,
 		color: 'black',
-		// position: 'absolute',
 		top: '20px',
-
 		'&:hover $clicked': {
 			color: 'grey',
 			cursor: 'pointer',
-			// textDecoration: 'line-through',
 			transition: 'all 200ms ease-in',
 			transform: 'scale(1.2)',
 		},
 	},
 	clicked: {
-		// width: 0,
-		// position: 'absolute',
 		transition: theme.transitions.create('opacity'),
 	},
 }));
@@ -39,13 +34,14 @@ export default function ButtonHeader(props) {
 
 	return (
 		<Button
+			style={{ backgroundColor: 'transparent' }}
 			classes={{
 				root: classes.headerStyle,
 				label: classes.clicked,
 			}}
 			className={props.className}
 			component={Link}
-			to = {props.to}
+			to={props.to}
 		>
 			{props.children}
 		</Button>

@@ -39,27 +39,27 @@ const useStyles = makeStyles((theme) => ({
 			cursor: 'pointer',
 			transition: 'all 200ms ease-in',
 			transform: 'scale(1.2)',
+			background: 'rbga(0,0,0,0)'
 		},
 	},
 	buttonPos1: {
 		padding: theme.spacing(0, 5),
-		// paddingTop:40,
-		// left: '25%'
 	},
 	buttonPos2: {
 		padding: theme.spacing(0, 5),
-		// paddingTop:40,
-		// right: '22%',
 	},
 	buttonPos3: {
 		padding: theme.spacing(0, 5),
-		// paddingTop:40,
-		// left: '46%',
 	},
 	clicked: {
-		// width: 200,
-		// position: 'absolute',
 		transition: theme.transitions.create('opacity'),
+	},
+	intro: {
+		width: '100%',
+		[theme.breakpoints.up('sm')]: {
+			width: '70%',
+			margin: '0 auto',
+		},
 	},
 	hi: {
 		color: 'black',
@@ -69,9 +69,13 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Montserrat',
 	},
 	footer: {
-		position: 'absolute',
-		width:'100%',
-		bottom: 0
+		bottom: 0,
+		position: 'fixed',
+		[theme.breakpoints.up('sm')]: {
+			position: 'absolute',
+			width: '100%',
+			bottom: 0
+		},
 	}
 }));
 
@@ -83,13 +87,14 @@ export default function Home({ }) {
 		<React.Fragment>
 			<div className={classes.root}>
 				<Fade top><div className={classes.name}>.Nhi Cung.</div></Fade>
-				<Fade top><p className={classes.hi}> {t('title')} </p></Fade>
+				<Fade top><div className={classes.intro}> <p className={classes.hi}> {t('title')} </p> </div> </Fade>
 
 				<div>
 					<Grid container spacing={1}>
 						<Grid item xs={12} md={4}>
 							<div>
 								<Button
+									style={{ backgroundColor: 'transparent' }}
 									classes={{
 										root: clsx(classes.button, classes.buttonPos1),
 										label: classes.clicked,
@@ -104,6 +109,7 @@ export default function Home({ }) {
 						<Grid item xs={12} md={4}>
 							<div>
 								<Button
+									style={{ backgroundColor: 'transparent' }}
 									classes={{
 										root: clsx(classes.button, classes.buttonPos2),
 										label: classes.clicked,
@@ -116,6 +122,7 @@ export default function Home({ }) {
 						<Grid item xs={12} md={4}>
 							<div>
 								<Button
+									style={{ backgroundColor: 'transparent' }}
 									classes={{
 										root: clsx(classes.button, classes.buttonPos3),
 										label: classes.clicked,
