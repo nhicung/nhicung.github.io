@@ -85,9 +85,11 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	footer: {
-		position: 'absolute',
-		width:'100%',
-		bottom: 0
+		[theme.breakpoints.up('sm')]: {
+			position: 'absolute',
+			width: '100%',
+			bottom: 0
+		},
 	}
 }));
 
