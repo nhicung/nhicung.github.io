@@ -10,16 +10,19 @@ import Footer from '../components/Footer'
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		left: 0,
-		right: 0,
-		top: 0,
-		bottom: 0,
+		// left: 0,
+		// right: 0,
+		// top: 0,
+		// bottom: 0,
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',
 		textAlign: 'center',
-		height: 'auto',
-		width: 'auto',
-		position: 'absolute',
+		// height: 'auto',
+		width: '100%',
+		height: '100vh',
+		margin: 0, 
+		padding: 0,
+		// position: 'absolute',
 		backgroundImage: 'url(./images/homebg.png)',
 		backgroundPosition: 'center'
 	},
@@ -29,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Montserrat',
 		fontSize: 68,
 		marginTop: 0,
+	},
+	container: {
+		// paddingBottom: '100px'
 	},
 	button: {
 		fontFamily: 'Montserrat',
@@ -69,13 +75,16 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Montserrat',
 	},
 	footer: {
-		bottom: 0,
-		position: 'fixed',
-		[theme.breakpoints.up('sm')]: {
-			position: 'absolute',
-			width: '100%',
-			bottom: 0
-		},
+		// bottom: 0,
+		// position: 'fixed',
+		// [theme.breakpoints.up('sm')]: {
+		// 	// position: 'absolute',
+		// 	width: '100%',
+		// 	bottom: 0
+		// },
+		position: 'absolute',
+		width:'100%',
+		bottom: 0
 	}
 }));
 
@@ -89,7 +98,7 @@ export default function Home({ }) {
 				<Fade top><div className={classes.name}>.Nhi Cung.</div></Fade>
 				<Fade top><div className={classes.intro}> <p className={classes.hi}> {t('title')} </p> </div> </Fade>
 
-				<div>
+				<div className={classes.container}>
 					<Grid container spacing={1}>
 						<Grid item xs={12} md={4}>
 							<div>
