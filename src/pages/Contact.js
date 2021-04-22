@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundPosition: 'center', 
 		margin: 0, 
 		padding: 0,
-		position: 'absolute',
+		// position: 'absolute',
 	},
 	set:{
 		[theme.breakpoints.up('sm')]: {

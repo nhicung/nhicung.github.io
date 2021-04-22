@@ -77,14 +77,14 @@ const useStyles = makeStyles((theme) => ({
 	footer: {
 		// bottom: 0,
 		// position: 'fixed',
-		// [theme.breakpoints.up('sm')]: {
-		// 	// position: 'absolute',
-		// 	width: '100%',
-		// 	bottom: 0
-		// },
-		position: 'absolute',
-		width:'100%',
-		bottom: 0
+		[theme.breakpoints.up('sm')]: {
+			position: 'absolute',
+			width: '100%',
+			bottom: 0
+		},
+	
+		// width:'100%',
+		// bottom: 0
 	}
 }));
 
