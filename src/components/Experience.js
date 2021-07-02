@@ -28,7 +28,11 @@ const useStyles = makeStyles((theme) => ({
     color: '#ECECEC',
     textAlign: 'left',
     paddingRight: 100,
-    fontSize: '44px',
+    paddingLeft: 10,
+    fontSize: '34px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '44px',
+    },
     fontFamily: 'Roboto Slab',
     margin: 0,
   },
@@ -51,23 +55,21 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: theme.spacing(0, 5),
-    // backgroundColor: '#8fc0a9'
+    padding: theme.spacing(0, 2),
   },
   item2: {
     height: 'auto',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: theme.spacing(0, 5),
-    // backgroundColor: '#c8d5b9'
+    padding: theme.spacing(0, 2),
   },
   item3: {
     height: 'auto',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: theme.spacing(0, 5),
+    padding: theme.spacing(0, 2),
     // backgroundColor: '#faf3dd'
   },
   image: {
@@ -77,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
   itemText: {
     color: '#ececec',
     fontFamily: 'Montserrat',
+    padding: 10
   },
   link: {
     fontWeight: 'bold',
@@ -98,7 +101,7 @@ export default function Mywork(props) {
           <h2 className={classes.expTitle}>{t('aboutme.expTitle')}</h2>
           <p className={classes.expText}>{t('aboutme.expIntro')}</p> <br />
           <div>
-            <Grid container spacing={5}>
+            <Grid container>
               <Grid item xs={12} md={4}>
                 <div className={classes.item2}>
                   <img
@@ -137,7 +140,7 @@ export default function Mywork(props) {
                     className={classes.image}
                   />
                   <h3 className={classes.expType}> Community Involvement </h3>
-                  <Typography className={classes.itemText} variant="h6" align="left">
+                  <Typography className={classes.itemText} variant="h6">
                     {t('aboutme.exp1')}
                     <a className={classes.link} target="_blank" href="https://www.knox.edu/offices/student-development/campus-life">{t('aboutme.note1')}</a>
                     {t('aboutme.exp11')}

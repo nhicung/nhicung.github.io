@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     padding: 50,
-    paddingBottom:50,
+    paddingBottom: 50,
     backgroundColor: '#4e89ae',
     height: 'auto',
     width: 'auto',
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     fontFamily: 'Roboto Slab',
-    marginBottom:80,
+    marginBottom: 80,
   },
   item1: {
     paddingTop: 40,
@@ -50,24 +50,26 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
     display: 'flex',
     flexDirection: 'column',
-    // alignItems: 'center',
     padding: theme.spacing(0, 5),
     backgroundColor: '#477ea0',
   },
   title: {
     color: '#ECECEC',
     textAlign: 'left',
-    // width: 700,
+    paddingLeft: 10,
     paddingRight: 100,
-    fontSize: '44px',
+    fontSize: '33px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '44px',
+    },
     fontFamily: 'Roboto Slab',
     margin: 0,
   },
   feedbackText: {
     color: '#b7cfdf',
-    fontSize: 25, 
-    textAlign:'left',
-    fontStyle:'italic',
+    fontSize: 25,
+    textAlign: 'left',
+    fontStyle: 'italic',
     margin: 15,
   },
   image: {
@@ -84,9 +86,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 15,
     paddingBottom: 30,
     paddingTop: 20,
-    textDecoration:'none',
+    textDecoration: 'none',
     '&:hover': {
-      textDecoration:'underline'
+      textDecoration: 'underline'
     }
   }
 }));
@@ -110,7 +112,7 @@ export default function Feedback() {
                   <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.feed1')}
                   </Typography>
-                  <a className = {classes.name} target="_blank" href="https://www.lindsaycurrie.com/about-me">
+                  <a className={classes.name} target="_blank" href="https://www.lindsaycurrie.com/about-me">
                     <b>Lindsay C.</b> <i>- Author at Simon and Schuster</i>
                   </a>
                 </div>
@@ -120,8 +122,8 @@ export default function Feedback() {
                   <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.feed2')}
                   </Typography>
-                  <a className = {classes.name} target="_blank" href="https://www.linkedin.com/in/monicamcgill/">
-                    <b>Monica M.</b> <i>- President and CEO at CSEdResearch.org</i> 
+                  <a className={classes.name} target="_blank" href="https://www.linkedin.com/in/monicamcgill/">
+                    <b>Monica M.</b> <i>- President and CEO at CSEdResearch.org</i>
                   </a>
                 </div>
               </Grid>
@@ -130,7 +132,7 @@ export default function Feedback() {
                   <Typography className={classes.itemText} variant="h6" align="left">
                     {t('aboutme.feed3')}
                   </Typography>
-                  <a className = {classes.name} target="_blank" href="https://www.fourunitedrepublic.com/about-us">
+                  <a className={classes.name} target="_blank" href="https://www.fourunitedrepublic.com/about-us">
                     <br />
                     <b>Thomas H.</b> <i>- CEO at FOUR</i>
                   </a>

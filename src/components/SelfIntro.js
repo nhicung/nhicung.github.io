@@ -38,7 +38,10 @@ const useStyles = makeStyles((theme) => ({
     color: '#ECECEC',
     textAlign: 'left',
     paddingRight: 100,
-    fontSize: '44px',
+    fontSize: '34px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '44px',
+    },
     fontFamily: 'Roboto Slab',
     margin: 0,
   },
@@ -62,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     color: '#b35b41',
-    fontWeight:'bold'
+    fontWeight: 'bold'
   }
 }));
 

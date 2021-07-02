@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
     display: 'flex',
-    position:'absolute'
+    position: 'absolute'
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     }),
     background: 'rgba(0,0,0,0)',
     color: 'black',
-    boxShadow:'none'
+    boxShadow: 'none'
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -91,26 +91,26 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const dataMenu = [
-	{
-		id: 0,
-		text: 'Home',
-    link: '/', 
-	},
-	{
-		id: 1,
-		text: 'About Me',
+  {
+    id: 0,
+    text: 'Home',
+    link: '/',
+  },
+  {
+    id: 1,
+    text: 'About Me',
     link: '#/about-me',
-	},
-	{
-		id: 2,
-		text: 'My Work',
+  },
+  {
+    id: 2,
+    text: 'My Work',
     link: '#/my-work',
-	},
-	{
-		id: 3,
-		text: 'Contact',
+  },
+  {
+    id: 3,
+    text: 'Contact',
     link: '#/contact',
-	},
+  },
 ];
 
 export default function ResponsiveMenu(props) {
@@ -127,17 +127,17 @@ export default function ResponsiveMenu(props) {
   };
 
   function SwitchIcon(icon) {
-    switch(icon) {
+    switch (icon) {
       case 'Home':
-        return (<HomeIcon/>);
+        return (<HomeIcon />);
       case 'About Me':
-        return (<AccountCircleIcon/>);
+        return (<AccountCircleIcon />);
       case 'My Work':
-        return (<CodeIcon/>);
+        return (<CodeIcon />);
       case 'Contact':
-        return (<ContactSupportIcon/>)
+        return (<ContactSupportIcon />)
       default:
-        return (<HomeIcon/>);
+        return (<HomeIcon />);
     }
   }
 
@@ -171,6 +171,7 @@ export default function ResponsiveMenu(props) {
           variant="persistent"
           anchor="left"
           open={open}
+          onClick={handleDrawerClose}
           classes={{
             paper: classes.drawerPaper,
           }}
@@ -182,7 +183,7 @@ export default function ResponsiveMenu(props) {
           </div>
           <Divider />
           <List>
-          {dataMenu.map((menu) => (
+            {dataMenu.map((menu) => (
               <ListItem button key={menu.id} href={menu.link} component='a'>
                 <ListItemIcon> {SwitchIcon(menu.text)} </ListItemIcon>
                 <ListItemText primary={menu.text} />
