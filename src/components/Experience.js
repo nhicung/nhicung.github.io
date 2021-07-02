@@ -50,27 +50,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 23,
 
   },
-  item1: {
+  item: {
     height: 'auto',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     padding: theme.spacing(0, 2),
-  },
-  item2: {
-    height: 'auto',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: theme.spacing(0, 2),
-  },
-  item3: {
-    height: 'auto',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: theme.spacing(0, 2),
-    // backgroundColor: '#faf3dd'
   },
   image: {
     height: 80,
@@ -90,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Mywork(props) {
+export default function Mywork() {
   const classes = useStyles();
   const { t, i18n } = useTranslation();
 
@@ -103,7 +88,7 @@ export default function Mywork(props) {
           <div>
             <Grid container>
               <Grid item xs={12} md={4}>
-                <div className={classes.item2}>
+                <div className={classes.item}>
                   <img
                     src={process.env.PUBLIC_URL + '/images/people.png'}
                     alt="rating"
@@ -118,7 +103,7 @@ export default function Mywork(props) {
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>
-                <div className={classes.item3}>
+                <div className={classes.item}>
                   <img
                     src={process.env.PUBLIC_URL + '/images/personal-computer.png'}
                     alt="rating"
@@ -133,7 +118,7 @@ export default function Mywork(props) {
                 </div>
               </Grid>
               <Grid item xs={12} md={4}>
-                <div className={classes.item1}>
+                <div className={classes.item}>
                   <img
                     src={process.env.PUBLIC_URL + '/images/campus.png'}
                     alt="rating"

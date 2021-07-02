@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
     display: 'flex',
     flexDirection: 'column',
-    // alignItems: 'center',
     padding: theme.spacing(0, 5),
     backgroundColor: '#477ea0',
   },
@@ -41,7 +40,6 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
     display: 'flex',
     flexDirection: 'column',
-    // alignItems: 'center',
     padding: theme.spacing(0, 5),
     backgroundColor: '#477ea0',
   },
@@ -93,6 +91,31 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+
+const data = [
+  {
+    id: 1,
+    content: 'aboutme.feed1',
+    link: 'https://www.lindsaycurrie.com/about-me',
+    name: 'Lindsay C.',
+    position: '- Author at Simon and Schuster'
+  },
+  {
+    id: 2,
+    content: 'aboutme.feed2',
+    link: 'https://www.linkedin.com/in/monicamcgill/',
+    name: 'Monica M.',
+    position: '- President and CEO at CSEdResearch.org'
+  },
+  {
+    id: 3,
+    content: 'aboutme.feed3',
+    link: 'https://www.fourunitedrepublic.com/about-us',
+    name: 'Thomas H.',
+    position: '- CEO at FOUR'
+  },
+]
+
 export default function Feedback() {
   const classes = useStyles();
   const { t, i18n } = useTranslation();
@@ -107,37 +130,17 @@ export default function Feedback() {
           <p className={classes.feedbackText}>{t('aboutme.feedIntro')}</p> <br />
           <div>
             <Grid container spacing={5}>
-              <Grid item xs={12} md={4}>
-                <div className={classes.item1}>
-                  <Typography className={classes.itemText} variant="h6" align="left">
-                    {t('aboutme.feed1')}
-                  </Typography>
-                  <a className={classes.name} target="_blank" href="https://www.lindsaycurrie.com/about-me">
-                    <b>Lindsay C.</b> <i>- Author at Simon and Schuster</i>
-                  </a>
-                </div>
-              </Grid>
-              <Grid item xs={12} md={4}>
-                <div className={classes.item2}>
-                  <Typography className={classes.itemText} variant="h6" align="left">
-                    {t('aboutme.feed2')}
-                  </Typography>
-                  <a className={classes.name} target="_blank" href="https://www.linkedin.com/in/monicamcgill/">
-                    <b>Monica M.</b> <i>- President and CEO at CSEdResearch.org</i>
-                  </a>
-                </div>
-              </Grid>
-              <Grid item xs={12} md={4}>
-                <div className={classes.item3}>
-                  <Typography className={classes.itemText} variant="h6" align="left">
-                    {t('aboutme.feed3')}
-                  </Typography>
-                  <a className={classes.name} target="_blank" href="https://www.fourunitedrepublic.com/about-us">
-                    <br />
-                    <b>Thomas H.</b> <i>- CEO at FOUR</i>
-                  </a>
-                </div>
-              </Grid>
+              {data.map((item) =>
+                <Grid item xs={12} md={4}>
+                  <div className={classes.item1}>
+                    <Typography className={classes.itemText} variant="h6" align="left">
+                      {t(item.content)}
+                    </Typography>
+                    <a className={classes.name} target="_blank" href={item.link}>
+                      <b>{item.name}</b> <i>{item.position}</i>
+                    </a>
+                  </div>
+                </Grid>)}
             </Grid>
           </div>
         </Container>
