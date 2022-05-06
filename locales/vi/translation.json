@@ -1,83 +1,87 @@
 {
-  "title": "Một lập trình viên đam mê tạo ra nhũng ứng dụng giúp ích cho cuộc sống và con người.",
-  "buttons": {
-    "button1": ".Giới Thiệu.",
-    "button2": ".Công Việc.",
-    "button3": ".Liên lạc .",
-    "button4": ".Trang Chủ ."
-  },
-  "aboutme": {
-    "aboutTitle": "Một chút về ban thân mình...",
-    "hi": "Xin chào.",
-    "aboutme1": "Mình tên là Nhi. Mình là một lập trình viên với kinh nghiệm về phát triển website và game cùng một đam mê giúp đỡ mọi người sử dụng công nghệ. ",
-    "aboutme2": "Mình cũng là một người với niềm yêu thích nghệ thuật và thiết kế. Mình thích vẽ vời như một cách để làm mới tâm hồn mình. ",
-    "aboutme3": "Với hai niềm đam mê này, mình muốn tạo ra những sản phẩm công nghệ làm thoả mãn người dùng. ",
-    "aboutme4": "Xem thêm ở ",
-    "link1": " Sản phẩm của mình",
-    "aboutme5": "và",
-    "link2": "Liên hệ",
-    "aboutme6": "Nếu bạn muốn tìm hiểu thêm nhé!",
-    "expTitle": "Trải nghiệm giúp mình trưởng thành",
-    "expIntro": "Tham gia vào những tổ chức và hoạt động ngoại khoá giúp mình phát triển nhiều kỹ năng. ",
-    "exp1": "Mình quan tâm đến những người xung quanh mình và quyết định trở thành một phần của ",
-    "note1": "Campus Life Office - Knox College ",
-    "exp11": "với vị trí ",
-    "note2": "Resident Assistant ",
-    "exp12": "để tạo ra một cộng đồng an toàn và lành mạnh. ",
-    "exp21": "Với sự giúp đỡ của giáo sư và bạn bè tại Knox College, mình đã quyết định xây dựng câu lạc bộ ",
-    "note3": "Knox Women in CS Club",
-    "exp22": "nhằm giúp đỡ sinh viên nữ với niềm đam mê tin học, lập trình và công nghệ một cộng đồng để giao lưu và học hỏi. ",
-    "exp3": "Với kiến thúc về công nghệ thông tin, mình làm ",
-    "note4": "Lab Manager tại Information Technology Services - Knox College ",
-    "exp31": "giám sát những sinh viên trợ lý phòng máy và quản lý lịch trình của họ. ",
-    "feedTitle": "Với sức mạnh của công nghệ...",
-    "feedIntro": "Mình tự hào tạo ra những sản phẩm và trải nghiệm có ý nghĩa ",
-    "feed1": "\"She was flexible, hard-working, and reliable. I was very impressed with her attention to detail and would absolutely recommend her in the future.\"",
-    "feed2": "\"She is a talented computer scientist with the necessary \"soft skills\" to make her a valuable employee. She is eager to learn new skills as she is driven by natural curiosity and deep desire to learn.\"",
-    "feed3": "\"Nhi delivered fantastic work on my website improvement project and I enjoyed working with her. Her communication was top-notch, she met all deadlines, and her skills were reasonably strong.\""
-  },
-  "contact": {
-    "title": "Liên lạc",
-    "contact1": "Đây là các địa chỉ để liên lạc với mình!",
-    "contact2": ""
-  },
-  "projectButton": {
-    "button1": "Xem trang web ",
-    "button2": "Xem Git Repo "
-  },
-  "mywork": {
-    "title": "Công Việc",
-    "restaurant": {
-      "tool": "sử dụng Java, SQL, Android Studio",
-      "description": "Đây là ứng dụng app chạy trên hệ Android, dành cho người dùng lưu thông tin nhà hàng và món ăn yêu thích của bản thân."
+    "title": "Một lập trình viên đam mê tạo ra nhũng ứng dụng giúp ích cho cuộc sống và con người.",
+    "buttons": {
+        "button1": ".Giới Thiệu.",
+        "button2": ".Công Việc.",
+        "button3": ".Liên lạc .",
+        "button4": ".Trang Chủ ."
     },
-    "cungdesign": {
-      "tool": "sử dụng ReactJs, HTML, CSS",
-      "description": "Đây là một trang web mình code và thiết kế. Trang web này giới thiệu và triển lãm tranh và sản phẩm của Cung Design."
+    "aboutme": {
+        "aboutTitle": "Một chút về ban thân mình...",
+        "hi": "Xin chào.",
+        "aboutme1": "Mình tên là Nhi. Mình là một lập trình viên với kinh nghiệm về phát triển website và game cùng một đam mê giúp đỡ mọi người sử dụng công nghệ. ",
+        "aboutme2": "Mình cũng là một người với niềm yêu thích nghệ thuật và thiết kế. Mình thích vẽ vời như một cách để làm mới tâm hồn mình. ",
+        "aboutme3": "Với hai niềm đam mê này, mình muốn tạo ra những sản phẩm công nghệ làm thoả mãn người dùng. ",
+        "aboutme4": "Xem thêm ở ",
+        "link1": " Sản phẩm của mình",
+        "aboutme5": "và",
+        "link2": "Liên hệ",
+        "aboutme6": "Nếu bạn muốn tìm hiểu thêm nhé!",
+        "expTitle": "Trải nghiệm giúp mình trưởng thành",
+        "expIntro": "Tham gia vào những tổ chức và hoạt động ngoại khoá giúp mình phát triển nhiều kỹ năng. ",
+        "exp1": "Mình quan tâm đến những người xung quanh mình và quyết định trở thành một phần của ",
+        "note1": "Campus Life Office - Knox College ",
+        "exp11": "với vị trí ",
+        "note2": "Resident Assistant ",
+        "exp12": "để tạo ra một cộng đồng an toàn và lành mạnh. ",
+        "exp21": "Với sự giúp đỡ của giáo sư và bạn bè tại Knox College, mình đã quyết định xây dựng câu lạc bộ ",
+        "note3": "Knox Women in CS Club",
+        "exp22": "nhằm giúp đỡ sinh viên nữ với niềm đam mê tin học, lập trình và công nghệ một cộng đồng để giao lưu và học hỏi. ",
+        "exp3": "Với kiến thúc về công nghệ thông tin, mình làm ",
+        "note4": "Lab Manager tại Information Technology Services - Knox College ",
+        "exp31": "giám sát những sinh viên trợ lý phòng máy và quản lý lịch trình của họ. ",
+        "feedTitle": "Với sức mạnh của công nghệ...",
+        "feedIntro": "Mình tự hào tạo ra những sản phẩm và trải nghiệm có ý nghĩa ",
+        "feed1": "\"She was flexible, hard-working, and reliable. I was very impressed with her attention to detail and would absolutely recommend her in the future.\"",
+        "feed2": "\"She is a talented computer scientist with the necessary \"soft skills\" to make her a valuable employee. She is eager to learn new skills as she is driven by natural curiosity and deep desire to learn.\"",
+        "feed3": "\"Nhi delivered fantastic work on my website improvement project and I enjoyed working with her. Her communication was top-notch, she met all deadlines, and her skills were reasonably strong.\""
     },
-    "lindsay": {
-      "tool": "sử dụng Wix, Corvid",
-      "description": "Đây là trang web mình thiết kế mới và code cho một tác giả truyện thiếu nhi - Lindsay Currie giúp cho trải nghiệm người dùng trở nên thú vị hơn."
+    "contact": {
+        "title": "Liên lạc",
+        "contact1": "Đây là các địa chỉ để liên lạc với mình!",
+        "contact2": ""
     },
-    "four": {
-      "tool": "sử dụng Wix, Corvid",
-      "description": "Đây là trang web mình thiết kế và code cho Tom Henderson giúp sắp xếp lại nội dung trang web và nâng cấp trải nghiệm cho người dử dụng."
+    "projectButton": {
+        "button1": "Xem trang web ",
+        "button2": "Xem Git Repo "
     },
-    "squirrel": {
-      "tool": "sử dụng Unity, C#, Adobe Illustrator",
-      "description": "Đây là một game trên điện thoại được code và thiết kế bởi một nhóm 3 người nhằm nâng cao nhận thức của học sinh về dinh dưỡng cho loài sóc chuột."
-    },
-    "memory": {
-      "tool": "sử dụng Unity, C#",
-      "description": "Mình làm nghiên cứu cho game này trong năm thứ 3 đại học. Nhiệm vụ của mình là nâng cấp UX/UI và trải nghiệm của người chơi game."
-    },
-    "message": {
-      "tool": "sử dụng ReactJs, HTML, CSS",
-      "description": "Mình code và thiết kế app điện thoại đơn giản này để gửi lời chúc tốt nghiệp và sinh nhật đến bạn bè và người thân trong mùa dịch COVID-19."
-    },
-    "icicle": {
-      "tool": "sử dụng Unity, C#",
-      "description": "Game 2D này là một dự án nhóm được lập trình và thiết kế bởi một nhóm 2 sinh viên tại Đại học Knox."
+    "mywork": {
+        "title": "Công Việc",
+        "apple": {
+            "tool": "sử dụng ReactJs, JSX, Express, NodeJs",
+            "description": "App clone từ trang web app Apple Music sử dụng data của Spotify. "
+        },
+        "restaurant": {
+            "tool": "sử dụng Java, SQL, Android Studio",
+            "description": "Đây là ứng dụng app chạy trên hệ Android, dành cho người dùng lưu thông tin nhà hàng và món ăn yêu thích của bản thân."
+        },
+        "cungdesign": {
+            "tool": "sử dụng ReactJs, HTML, CSS",
+            "description": "Đây là một trang web mình code và thiết kế. Trang web này giới thiệu và triển lãm tranh và sản phẩm của Cung Design."
+        },
+        "lindsay": {
+            "tool": "sử dụng Wix, Corvid",
+            "description": "Đây là trang web mình thiết kế mới và code cho một tác giả truyện thiếu nhi - Lindsay Currie giúp cho trải nghiệm người dùng trở nên thú vị hơn."
+        },
+        "four": {
+            "tool": "sử dụng Wix, Corvid",
+            "description": "Đây là trang web mình thiết kế và code cho Tom Henderson giúp sắp xếp lại nội dung trang web và nâng cấp trải nghiệm cho người dử dụng."
+        },
+        "squirrel": {
+            "tool": "sử dụng Unity, C#, Adobe Illustrator",
+            "description": "Đây là một game trên điện thoại được code và thiết kế bởi một nhóm 3 người nhằm nâng cao nhận thức của học sinh về dinh dưỡng cho loài sóc chuột."
+        },
+        "memory": {
+            "tool": "sử dụng Unity, C#",
+            "description": "Mình làm nghiên cứu cho game này trong năm thứ 3 đại học. Nhiệm vụ của mình là nâng cấp UX/UI và trải nghiệm của người chơi game."
+        },
+        "message": {
+            "tool": "sử dụng ReactJs, HTML, CSS",
+            "description": "Mình code và thiết kế app điện thoại đơn giản này để gửi lời chúc tốt nghiệp và sinh nhật đến bạn bè và người thân trong mùa dịch COVID-19."
+        },
+        "icicle": {
+            "tool": "sử dụng Unity, C#",
+            "description": "Game 2D này là một dự án nhóm được lập trình và thiết kế bởi một nhóm 2 sinh viên tại Đại học Knox."
+        }
     }
-  }
 }
