@@ -1,83 +1,87 @@
 {
-  "title": "A developer who enjoys creating interactive and user-friendly productions to improve human life.",
-  "buttons": {
-    "button1": ".About Me.",
-    "button2": ".My Work.",
-    "button3": ".Contact.",
-    "button4": ".Home."
-  },
-  "aboutme": {
-    "aboutTitle":"A bit about me...",
-    "hi": "Hi.",
-    "aboutme1": "My name is Nhi. I am a programmer with experience in web and game development and a passion of helping people in technology. ",
-    "aboutme2": " I am also an artist who loves drawing and designing. I draw as a way of refreshing my creativity.",
-    "aboutme3": "With these two passions, I strive to create professional technological productions that satisfy users' eyes and experience.",
-    "aboutme4": "Have a look at",
-    "link1": " My work",
-    "aboutme5": "and",
-    "link2": "Contact me",
-    "aboutme6": "if you are interested!",
-    "expTitle":"Exeprience makes me grow...",
-    "expIntro":"Every community involvement builds up essential skills in my life.",
-    "exp1":"I care about the community that I live in and the people I live with. I decided to join the ", 
-    "note1":"Campus Life Office ", 
-    "exp11":"and become an ",
-    "note2":"Resident Assistant ",
-    "exp12":"to give a hand in buiding a safe and inclusive community.",
-    "exp21":"With the help of peerers and professors at Knox College, I was motivated to found the ",
-    "note3":"Knox Women in CS Club",
-    "exp22":", which has become a great support to female representatives at Knox to further their interest in technology.",
-    "exp3":"With my technology skills, I worked as a ", 
-    "note4":"Lab Manager at the Information Technology Services ",
-    "exp31":"and supervised to student lab assistants in computer software, hardware and lab procedures.",
-    "feedTitle":"Empowered by the strength of technology...",
-    "feedIntro":"I am delighted to create meaningful products and experience ",
-    "feed1":"\"She was flexible, hard-working, and reliable. I was very impressed with her attention to detail and would absolutely recommend her in the future.\"",
-    "feed2":"\"She is a talented computer scientist with the necessary \"soft skills\" to make her a valuable employee. She is eager to learn new skills as she is driven by natural curiosity and deep desire to learn.\"",
-    "feed3":"\"Nhi delivered fantastic work on my website improvement project and I enjoyed working with her. Her communication was top-notch, she met all deadlines, and her skills were reasonably strong.\""
-  },
-  "contact": {
-    "title": "Contact",
-    "contact1": "Feel free to reach out to me with these addresses!",
-    "contact2": "I am very responsive!"
-  },
-  "projectButton": {
-    "button1": "Visit Site ",
-    "button2": "See Git Repo "
-  },
-  "mywork": {
-    "title":"My Work",
-    "restaurant": {
-      "tool": "with Java, SQL, Android Studio",
-      "description": "An Android App for users to save their favorite restaurants and rate their dishes that belong to the restaurants."
+    "title": "A developer who enjoys creating interactive and user-friendly productions to improve human life.",
+    "buttons": {
+        "button1": ".About Me.",
+        "button2": ".My Work.",
+        "button3": ".Contact.",
+        "button4": ".Home."
     },
-    "cungdesign": {
-      "tool": "with ReactJs, HTML, CSS",
-      "description": "This is a multi-page website I designed and coded as a personal project. The website showcases artworks made by Cung Design."
+    "aboutme": {
+        "aboutTitle": "A bit about me...",
+        "hi": "Hi.",
+        "aboutme1": "My name is Nhi. I am a programmer with experience in web and game development and a passion of helping people in technology. ",
+        "aboutme2": " I am also an artist who loves drawing and designing. I draw as a way of refreshing my creativity.",
+        "aboutme3": "With these two passions, I strive to create professional technological productions that satisfy users' eyes and experience.",
+        "aboutme4": "Have a look at",
+        "link1": " My work",
+        "aboutme5": "and",
+        "link2": "Contact me",
+        "aboutme6": "if you are interested!",
+        "expTitle": "Exeprience makes me grow...",
+        "expIntro": "Every community involvement builds up essential skills in my life.",
+        "exp1": "I care about the community that I live in and the people I live with. I decided to join the ",
+        "note1": "Campus Life Office ",
+        "exp11": "and become an ",
+        "note2": "Resident Assistant ",
+        "exp12": "to give a hand in buiding a safe and inclusive community.",
+        "exp21": "With the help of peerers and professors at Knox College, I was motivated to found the ",
+        "note3": "Knox Women in CS Club",
+        "exp22": ", which has become a great support to female representatives at Knox to further their interest in technology.",
+        "exp3": "With my technology skills, I worked as a ",
+        "note4": "Lab Manager at the Information Technology Services ",
+        "exp31": "and supervised to student lab assistants in computer software, hardware and lab procedures.",
+        "feedTitle": "Empowered by the strength of technology...",
+        "feedIntro": "I am delighted to create meaningful products and experience ",
+        "feed1": "\"She was flexible, hard-working, and reliable. I was very impressed with her attention to detail and would absolutely recommend her in the future.\"",
+        "feed2": "\"She is a talented computer scientist with the necessary \"soft skills\" to make her a valuable employee. She is eager to learn new skills as she is driven by natural curiosity and deep desire to learn.\"",
+        "feed3": "\"Nhi delivered fantastic work on my website improvement project and I enjoyed working with her. Her communication was top-notch, she met all deadlines, and her skills were reasonably strong.\""
     },
-    "lindsay": {
-      "tool": "with Wix, Corvid",
-      "description": "This is a published website I redesigned and coded for a children book author - Lindsay Currie to make the user experience more enjoyable."
+    "contact": {
+        "title": "Contact",
+        "contact1": "Feel free to reach out to me with these addresses!",
+        "contact2": "I am very responsive!"
     },
-    "four": {
-      "tool": "with Wix, Corvid",
-      "description": "This is a published website I redesigned for Tom Henderson including improving its usability and reorganzing its content for better performance."
+    "projectButton": {
+        "button1": "Visit Site ",
+        "button2": "See Git Repo "
     },
-    "squirrel": {
-      "tool": "with Unity, C#, Adobe Illustrator",
-      "description": "This 2D mobile game was coded and designed by a team of three for the purpose of improving student's awareness of a healthy nutrition for squirrels."
-    },
-    "memory": {
-      "tool": "with Unity, C#",
-      "description": "I worked on this game as a research assistant during junior year at Knox college. I coded and redesigned to improve its UX/UI."
-    },
-    "message": {
-      "tool": "with ReactJs, HTML, CSS",
-      "description": "I coded and designed this simple app to send birthday and graduation congratulation messages to my friends during the COVID-19."
-    },
-    "icicle": {
-      "tool": "with Unity, C#",
-      "description": "This 2D game was coded and designed by a team of two as a class project of Knox College."
+    "mywork": {
+        "title": "My Work",
+        "apple": {
+            "tool": "with ReactJs, JSX, Express, NodeJs",
+            "description": "An Apple Music Application clone that uses the Spotify web api for the backend data."
+        },
+        "restaurant": {
+            "tool": "with Java, SQL, Android Studio",
+            "description": "An Android App for users to save their favorite restaurants and rate their dishes that belong to the restaurants."
+        },
+        "cungdesign": {
+            "tool": "with ReactJs, HTML, CSS",
+            "description": "This is a multi-page website I designed and coded as a personal project. The website showcases artworks made by Cung Design."
+        },
+        "lindsay": {
+            "tool": "with Wix, Corvid",
+            "description": "This is a published website I redesigned and coded for a children book author - Lindsay Currie to make the user experience more enjoyable."
+        },
+        "four": {
+            "tool": "with Wix, Corvid",
+            "description": "This is a published website I redesigned for Tom Henderson including improving its usability and reorganzing its content for better performance."
+        },
+        "squirrel": {
+            "tool": "with Unity, C#, Adobe Illustrator",
+            "description": "This 2D mobile game was coded and designed by a team of three for the purpose of improving student's awareness of a healthy nutrition for squirrels."
+        },
+        "memory": {
+            "tool": "with Unity, C#",
+            "description": "I worked on this game as a research assistant during junior year at Knox college. I coded and redesigned to improve its UX/UI."
+        },
+        "message": {
+            "tool": "with ReactJs, HTML, CSS",
+            "description": "I coded and designed this simple app to send birthday and graduation congratulation messages to my friends during the COVID-19."
+        },
+        "icicle": {
+            "tool": "with Unity, C#",
+            "description": "This 2D game was coded and designed by a team of two as a class project of Knox College."
+        }
     }
-  }
 }
