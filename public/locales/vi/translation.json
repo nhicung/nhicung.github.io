@@ -38,8 +38,7 @@
     },
     "contact": {
         "title": "Liên lạc",
-        "contact1": "Đây là các địa chỉ để liên lạc với mình!",
-        "contact2": ""
+        "contact1": "Đây là các địa chỉ để liên lạc với mình!"
     },
     "projectButton": {
         "button1": "Xem trang web ",
@@ -47,40 +46,44 @@
     },
     "mywork": {
         "title": "Công Việc",
+        "jamfeed": {
+            "tool": "Lập trìnhh với ReactJs, JSX, CSS, NodeJs",
+            "description": "Sử dụng React để lập trình và phát triển một web app như một công cụ dùng để thiết lập website cho nghệ sĩ."
+        },
         "apple": {
-            "tool": "sử dụng ReactJs, JSX, Express, NodeJs",
-            "description": "App clone từ trang web app Apple Music sử dụng data của Spotify. "
+            "tool": "Lập trìnhh với ReactJs, JSX, Epress, NodeJs",
+            "description": "Tái tạo Apple Music Application clone sử dụng dữ liệu từ Spotify web api."
         },
         "restaurant": {
-            "tool": "sử dụng Java, SQL, Android Studio",
+            "tool": "Lập trìnhh với Java, SQL, Android Studio",
             "description": "Đây là ứng dụng app chạy trên hệ Android, dành cho người dùng lưu thông tin nhà hàng và món ăn yêu thích của bản thân."
         },
         "cungdesign": {
-            "tool": "sử dụng ReactJs, HTML, CSS",
+            "tool": "Lập trìnhh với ReactJs, HTML, CSS",
             "description": "Đây là một trang web mình code và thiết kế. Trang web này giới thiệu và triển lãm tranh và sản phẩm của Cung Design."
         },
         "lindsay": {
-            "tool": "sử dụng Wix, Corvid",
+            "tool": "Lập trìnhh với Wix, Corvid",
             "description": "Đây là trang web mình thiết kế mới và code cho một tác giả truyện thiếu nhi - Lindsay Currie giúp cho trải nghiệm người dùng trở nên thú vị hơn."
         },
         "four": {
-            "tool": "sử dụng Wix, Corvid",
+            "tool": "Lập trìnhh với Wix, Corvid",
             "description": "Đây là trang web mình thiết kế và code cho Tom Henderson giúp sắp xếp lại nội dung trang web và nâng cấp trải nghiệm cho người dử dụng."
         },
         "squirrel": {
-            "tool": "sử dụng Unity, C#, Adobe Illustrator",
+            "tool": "Lập trìnhh với Unity, C#, Adobe Illustrator",
             "description": "Đây là một game trên điện thoại được code và thiết kế bởi một nhóm 3 người nhằm nâng cao nhận thức của học sinh về dinh dưỡng cho loài sóc chuột."
         },
         "memory": {
-            "tool": "sử dụng Unity, C#",
+            "tool": "Lập trìnhh vớig Unity, C#",
             "description": "Mình làm nghiên cứu cho game này trong năm thứ 3 đại học. Nhiệm vụ của mình là nâng cấp UX/UI và trải nghiệm của người chơi game."
         },
         "message": {
-            "tool": "sử dụng ReactJs, HTML, CSS",
+            "tool": "Lập trìnhh với ReactJs, HTML, CSS",
             "description": "Mình code và thiết kế app điện thoại đơn giản này để gửi lời chúc tốt nghiệp và sinh nhật đến bạn bè và người thân trong mùa dịch COVID-19."
         },
         "icicle": {
-            "tool": "sử dụng Unity, C#",
+            "tool": "Lập trìnhh với Unity, C#",
             "description": "Game 2D này là một dự án nhóm được lập trình và thiết kế bởi một nhóm 2 sinh viên tại Đại học Knox."
         }
     }
