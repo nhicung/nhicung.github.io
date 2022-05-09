@@ -174,7 +174,6 @@ export default function Contact(props) {
                     </div>
                     <br />
                     {t('contact.contact1')}
-                    {t('contact.contact2')}
                     <div>
                         <Grid container spacing={5}>
                             <Grid item xs={12} md={12}>
