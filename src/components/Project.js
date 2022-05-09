@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme, props) => ({
         color: '#8E3200',
         textAlign: 'justify',
         // height: 400,
-        // paddingTop: 100,
+        paddingTop: '40px !important',
     },
     names: {
         fontSize: '44px',
