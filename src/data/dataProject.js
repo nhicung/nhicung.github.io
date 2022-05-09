@@ -43,7 +43,7 @@ const description = [
         id: 'cungdesign',
         color: '#d49a89',
         height: '360px',
-        img: 'images/cungdesign.gif',
+        img: 'images/cung-design.gif',
         bgimage: 'url(./images/container1.png)',
         type: '.Web',
         name: 'Cung Design',
