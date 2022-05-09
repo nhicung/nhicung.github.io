@@ -70,6 +70,9 @@ const useStyles = makeStyles((theme) => ({
     headerPos3: {
         padding: theme.spacing(0, 1),
     },
+    container: {
+        paddingBottom: '40px',
+    },
 }));
 
 export default function Mywork(props) {
