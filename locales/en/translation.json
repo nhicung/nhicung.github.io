@@ -38,8 +38,7 @@
     },
     "contact": {
         "title": "Contact",
-        "contact1": "Feel free to reach out to me with these addresses!",
-        "contact2": "I am very responsive!"
+        "contact1": "There are a few ways to reach out to me!"
     },
     "projectButton": {
         "button1": "Visit Site ",
@@ -47,9 +46,13 @@
     },
     "mywork": {
         "title": "My Work",
+        "jamfeed": {
+            "tool": "with ReactJs, JSX, CSS, NodeJs",
+            "description": "Create a Content Management System that serves as a no-code web builder for musicians to build their portfolios, like WordPress, using React and MaterialUI."
+        },
         "apple": {
             "tool": "with ReactJs, JSX, Express, NodeJs",
-            "description": "A clone of the Apple Music App that integrates Spotify API as the backend data."
+            "description": "An Apple Music Application clone that uses the Spotify web api for the backend data."
         },
         "restaurant": {
             "tool": "with Java, SQL, Android Studio",
