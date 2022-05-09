@@ -47,6 +47,10 @@
     },
     "mywork": {
         "title": "Công Việc",
+        "jamfeed": {
+            "tool": "Lập trìnhh với ReactJs, JSX, CSS, NodeJs",
+            "description": "Sử dụng React để lập trình và phát triển một web app như một công cụ dùng để thiết lập website cho nghệ sĩ."
+        },
         "apple": {
             "tool": "Lập trìnhh với ReactJs, JSX, Epress, NodeJs",
             "description": "Tái tạo Apple Music Application clone sử dụng dữ liệu từ Spotify web api."

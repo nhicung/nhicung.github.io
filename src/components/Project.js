@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme, props) => ({
         display: "flex",
         flexDirection: "column",
         marginTop: 50,
-        paddingBottom: 80,
+        paddingBottom: 50,
         paddingTop: 30,
         // height: '450px',
         height: "auto",
@@ -68,6 +68,7 @@ const useStyles = makeStyles((theme, props) => ({
         height: 350,
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
     },
     pic: {
         margin: "auto",
@@ -75,7 +76,7 @@ const useStyles = makeStyles((theme, props) => ({
         maxWidth: "100%",
         paddingLeft: 0,
         [theme.breakpoints.up("md")]: {
-            paddingLeft: (props) => (props.project.type === "phone" ? 150 : 0),
+            // paddingLeft: (props) => (props.project.type === 'phone' ? 150 : 0),
         },
         // display: 'block',
     },

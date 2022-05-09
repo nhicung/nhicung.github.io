@@ -6,78 +6,87 @@ import SelfIntro from '../components/SelfIntro';
 import Experience from '../components/Experience';
 import Feedback from '../components/Feedback';
 import Grid from '@material-ui/core/Grid';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    textAlign: 'center',
-    height: 'auto',
-    width: 'auto',
-    left: 0,
-    right: 0,
-    top: 0,
-    bottom: 0,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-    backgroundImage: 'url(./images/aboutMebg.png)',
-    backgroundPosition: 'center',
-  },
-  headerPos1: {
-    padding: theme.spacing(0, 1),
-  },
-  headerPos2: {
-    padding: theme.spacing(0, 1),
-  },
-  headerPos3: {
-    padding: theme.spacing(0, 1),
-  },
-  set: {
-    [theme.breakpoints.up('sm')]: {
-      display: 'flex',
+    root: {
+        textAlign: 'center',
+        height: 'auto',
+        width: 'auto',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        // backgroundImage: 'url(./images/aboutMebg.png)',
+        background: '#FFEBC1',
+        backgroundPosition: 'center',
     },
-    display: 'none',
-  },
-
+    headerPos1: {
+        padding: theme.spacing(0, 1),
+    },
+    headerPos2: {
+        padding: theme.spacing(0, 1),
+    },
+    headerPos3: {
+        padding: theme.spacing(0, 1),
+    },
+    set: {
+        [theme.breakpoints.up('sm')]: {
+            display: 'flex',
+        },
+        display: 'none',
+    },
 }));
 
 export default function LeftSide() {
-  const classes = useStyles();
-  const { t, i18n } = useTranslation();
+    const classes = useStyles();
+    const { t, i18n } = useTranslation();
 
-  return (
-    <div className={classes.root}>
-      <div className={classes.header}>
-        <div>
-          <Grid container spacing={1} className={classes.set}>
-            <Grid item xs={12} md={4}>
-              <ButtonHeader className={classes.headerPos1} to={'/my-work'}>
-                {t('buttons.button2')}
-              </ButtonHeader>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <ButtonHeader className={classes.headerPos2} to={'/'}>
-                {t('buttons.button4')}
-              </ButtonHeader>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <ButtonHeader className={classes.headerPos3} to={'/contact'}>
-                {t('buttons.button3')}
-              </ButtonHeader>
-            </Grid>
-          </Grid>
-        </div>
-      </div>
-      <div className={classes.content}>
-        <SelfIntro />
-        <br />
-        <Experience />
-        <br />
-        <Feedback />
-        <br />
-      </div>
-      <Footer/>
-      {/* <div className={classes.container} maxWidth="md">
+    return (
+        <div className={classes.root}>
+            <div className={classes.header}>
+                <div>
+                    <Grid container spacing={1} className={classes.set}>
+                        <Grid item xs={12} md={4}>
+                            <ButtonHeader
+                                className={classes.headerPos1}
+                                to={'/my-work'}
+                            >
+                                {t('buttons.button2')}
+                            </ButtonHeader>
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <ButtonHeader
+                                className={classes.headerPos2}
+                                to={'/'}
+                            >
+                                {t('buttons.button4')}
+                            </ButtonHeader>
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <ButtonHeader
+                                className={classes.headerPos3}
+                                to={'/contact'}
+                            >
+                                {t('buttons.button3')}
+                            </ButtonHeader>
+                        </Grid>
+                    </Grid>
+                </div>
+            </div>
+            <div className={classes.content}>
+                <SelfIntro />
+                <br />
+                <Experience />
+                <br />
+                <Feedback />
+                <br />
+            </div>
+            <Footer />
+            {/* <div className={classes.container} maxWidth="md">
         <Slide left>
           <div className={classes.description}>
             <h1 className={classes.hi}> {t('aboutme.hi')}</h1>
@@ -138,7 +147,6 @@ export default function LeftSide() {
           </div>
         </Slide>
       </div> */}
-    </div>
-
-  );
+        </div>
+    );
 }

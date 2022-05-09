@@ -47,6 +47,10 @@
     },
     "mywork": {
         "title": "My Work",
+        "jamfeed": {
+            "tool": "with ReactJs, JSX, CSS, NodeJs",
+            "description": "Create a Content Management System that serves as a no-code web builder for musicians to build their portfolios, like WordPress, using React and MaterialUI."
+        },
         "apple": {
             "tool": "with ReactJs, JSX, Express, NodeJs",
             "description": "An Apple Music Application clone that uses the Spotify web api for the backend data."
