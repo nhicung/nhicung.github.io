@@ -24,6 +24,7 @@ const description = [
         description:
             'An Apple Music Application clone that uses the Spotify web api for the backend data.',
         gitURL: 'https://github.com/nhicung/apple-music-clone',
+        webURL: 'https://whispering-thicket-41770.herokuapp.com/',
     },
     {
         id: 'restaurant',
