@@ -26,6 +26,9 @@ const useStyles = makeStyles((theme, props) => ({
         backgroundPosition: 'center',
     },
     set: {
+        [theme.breakpoints.up('sm')]: {
+            margin: '0 auto',
+        },
         justifyContent: 'center',
         display: 'flex',
         flexDirection: 'row',
@@ -33,6 +36,7 @@ const useStyles = makeStyles((theme, props) => ({
         // margin:'auto'
         margin: 'auto',
         paddingBottom: 'auto',
+        margin: '-15px',
     },
     project: {
         color: '#8E3200',
@@ -44,14 +48,20 @@ const useStyles = makeStyles((theme, props) => ({
         fontSize: '44px',
         fontFamily: 'Roboto Slab',
         margin: 0,
-        textAlign: 'left',
+        textAlign: 'center',
+        [theme.breakpoints.up('sm')]: {
+            textAlign: 'left',
+        },
     },
     tools: {
-        color: '#8E3200',
+        color: '#ad7c4c',
         fontFamily: 'Roboto Slab',
         margin: 0,
         fontStyle: 'italic',
-        textAlign: 'left',
+        textAlign: 'center',
+        [theme.breakpoints.up('sm')]: {
+            textAlign: 'left',
+        },
     },
     descripts: {
         fontFamily: 'Montserrat',
@@ -114,33 +124,38 @@ export default function Project(props) {
                                 {' '}
                                 {t(`mywork.${props.project.id}.description`)}
                             </p>
-                            {props.project.webURL != null ? (
-                                <Button
-                                    color='secondary'
-                                    className={classes.button}
-                                    size='medium'
-                                    variant='outlined'
-                                    href={props.project.webURL}
-                                    target='_blank'
-                                >
-                                    {' '}
-                                    {t('projectButton.button1')}{' '}
-                                </Button>
-                            ) : null}
-
-                            {props.project.gitURL != null ? (
-                                <Button
-                                    color='secondary'
-                                    className={classes.button}
-                                    size='medium'
-                                    variant='outlined'
-                                    href={props.project.gitURL}
-                                    target='_blank'
-                                >
-                                    {' '}
-                                    {t('projectButton.button2')}{' '}
-                                </Button>
-                            ) : null}
+                            <Grid container>
+                                {props.project.webURL != null ? (
+                                    <Grid item xs>
+                                        <Button
+                                            color='secondary'
+                                            className={classes.button}
+                                            size='medium'
+                                            variant='outlined'
+                                            href={props.project.webURL}
+                                            target='_blank'
+                                        >
+                                            {' '}
+                                            {t('projectButton.button1')}{' '}
+                                        </Button>
+                                    </Grid>
+                                ) : null}
+                                {props.project.gitURL != null ? (
+                                    <Grid item xs>
+                                        <Button
+                                            color='secondary'
+                                            className={classes.button}
+                                            size='medium'
+                                            variant='outlined'
+                                            href={props.project.gitURL}
+                                            target='_blank'
+                                        >
+                                            {' '}
+                                            {t('projectButton.button2')}{' '}
+                                        </Button>
+                                    </Grid>
+                                ) : null}
+                            </Grid>
                         </Grid>
                         <Grid
                             item
