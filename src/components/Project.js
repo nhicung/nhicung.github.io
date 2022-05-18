@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme, props) => ({
         backgroundPosition: 'center',
     },
     set: {
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('md')]: {
             margin: '0 auto',
         },
         justifyContent: 'center',
@@ -40,16 +40,19 @@ const useStyles = makeStyles((theme, props) => ({
     },
     project: {
         color: '#8E3200',
-        textAlign: 'justify',
         // height: 400,
         paddingTop: '40px !important',
+        [theme.breakpoints.up('md')]: {
+            textAlign: 'justify',
+        },
+        textAlign: 'center',
     },
     names: {
         fontSize: '44px',
         fontFamily: 'Roboto Slab',
         margin: 0,
         textAlign: 'center',
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('md')]: {
             textAlign: 'left',
         },
     },
@@ -59,7 +62,7 @@ const useStyles = makeStyles((theme, props) => ({
         margin: 0,
         fontStyle: 'italic',
         textAlign: 'center',
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('md')]: {
             textAlign: 'left',
         },
     },
@@ -69,7 +72,12 @@ const useStyles = makeStyles((theme, props) => ({
         textAlign: 'justify',
     },
     button: {
-        marginRight: 50,
+        [theme.breakpoints.up('md')]: {
+            fontSize: '14px',
+            marginRight: 50,
+        },
+        fontSize: '11px',
+        marginRight: 0,
         fontFamily: 'Roboto Slab',
     },
     imgWrap: {
@@ -124,7 +132,7 @@ export default function Project(props) {
                                 {' '}
                                 {t(`mywork.${props.project.id}.description`)}
                             </p>
-                            <Grid container>
+                            <Grid container center>
                                 {props.project.webURL != null ? (
                                     <Grid item xs>
                                         <Button
